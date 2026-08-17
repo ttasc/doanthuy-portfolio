@@ -9,11 +9,7 @@ const portfolioData = {
         {
           "platform": "Facebook",
           "url": "https://facebook.com/lenguyenthidoanthuy"
-        },
-        // {
-        //   "platform": "Github",
-        //   "url": "https://github.com/ttasc"
-        // }
+        }
       ]
     }
   },
@@ -207,16 +203,17 @@ const portfolioData = {
       "projects": [
         {
           "name": "Khỉ khô cười khi khổ",
+          "thumbnail": "./assets/circle.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -234,16 +231,17 @@ const portfolioData = {
         },
         {
           "name": "Mini Hippo",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -266,16 +264,17 @@ const portfolioData = {
       "projects": [
         {
           "name": "Bia Masan",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -293,16 +292,17 @@ const portfolioData = {
         },
         {
           "name": "Intimate",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -320,16 +320,17 @@ const portfolioData = {
         },
         {
           "name": "Beam Paws",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -347,16 +348,17 @@ const portfolioData = {
         },
         {
           "name": "Phim: Ước mơ người hùng",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -374,16 +376,17 @@ const portfolioData = {
         },
         {
           "name": "Video dự thi: Who am I?",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -401,16 +404,17 @@ const portfolioData = {
         },
         {
           "name": "MV: Bát cơm mặn",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -428,16 +432,17 @@ const portfolioData = {
         },
         {
           "name": "Video: Báo cáo công tác - T17",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -455,16 +460,17 @@ const portfolioData = {
         },
         {
           "name": "MV: Tết là để",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [
             { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
             { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -487,16 +493,17 @@ const portfolioData = {
       "projects": [
         {
           "name": "Staff SGT",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [],
           "product_images": [
             { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -508,16 +515,17 @@ const portfolioData = {
         },
         {
           "name": "Mar Assi",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [],
           "product_images": [
             { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -529,16 +537,17 @@ const portfolioData = {
         },
         {
           "name": "Kênh truyện",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [],
           "product_images": [
             { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -550,16 +559,17 @@ const portfolioData = {
         },
         {
           "name": "Tư tưởng hồ Chí Minh",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [],
           "product_images": [
             { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -571,16 +581,17 @@ const portfolioData = {
         },
         {
           "name": "TVC - Tô màu cuộc sống",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [],
           "product_images": [
             { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -592,16 +603,17 @@ const portfolioData = {
         },
         {
           "name": "BTS - MV Quá Là Thời Trang - Lamsaomai",
+          "thumbnail": "./assets/source.png",
           "overview": "<Mô tả tổng quan dự án>",
-          "main_tasks": {
-            "role": "Tôi đã làm gì",
-            "scope": "Phạm vi phụ trách",
-            "coordination": "Cách phối hợp"
-          },
-          "impact": {
-            "outcome": "Outcome",
-            "metrics": "Số liệu/Impact"
-          },
+          "main_tasks": [
+            "Tôi đã làm gì",
+            "Phạm vi phụ trách",
+            "Cách phối hợp"
+          ],
+          "result": [
+            "Outcome",
+            "Số liệu/Impact"
+          ],
           "plan_images": [],
           "product_images": [
             { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
@@ -628,5 +640,4 @@ const portfolioData = {
   ]
 }
 
-// Expose ra global để script.js có thể đọc
 window.portfolioData = portfolioData;

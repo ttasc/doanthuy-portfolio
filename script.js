@@ -1,3 +1,4 @@
+// script.js
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Lấy dữ liệu
     const data = window.portfolioData;
@@ -203,10 +204,18 @@ function drawProjectGrid(projects) {
     projects.forEach((proj, idx) => {
         const card = document.createElement('div');
         card.className = 'project-card';
+        // Thiết kế lại cấu trúc Card: Tách inner thành 2 phần Left (Thumbnail) và Right (Content)
         card.innerHTML = `
-            <div class="project-card-cat">${proj._category}</div>
-            <h3 class="project-card-title">${proj.name}</h3>
-            <span class="micro-label">Khám phá <span class="project-card-arrow">→</span></span>
+            <div class="project-card-inner">
+                <div class="project-thumbnail">
+                    <img src="${proj.thumbnail || './assets/source.png'}" alt="${proj.name}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'400\\' height=\\'300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23eee\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' fill=\\'%23999\\'>No Image</text></svg>'">
+                </div>
+                <div class="project-card-content">
+                    <div class="project-card-cat">${proj._category}</div>
+                    <h3 class="project-card-title">${proj.name}</h3>
+                    <span class="micro-label">Khám phá <span class="project-card-arrow">→</span></span>
+                </div>
+            </div>
         `;
 
         card.addEventListener('click', () => openModal(idx, projects));
@@ -277,14 +286,21 @@ function openModal(index, projectList) {
     document.getElementById('modal-title').textContent = project.name;
     document.getElementById('modal-overview').innerHTML = project.overview;
 
-    // Meta data
-    document.getElementById('modal-role').textContent = project.main_tasks.role;
-    document.getElementById('modal-scope').textContent = project.main_tasks.scope;
-    document.getElementById('modal-coordination').textContent = project.main_tasks.coordination;
+    // Meta data (Main tasks)
+    const tasksContainer = document.getElementById('modal-tasks');
+    if (project.main_tasks && project.main_tasks.length > 0) {
+        tasksContainer.innerHTML = project.main_tasks.map(task => `<li>${task}</li>`).join('');
+    } else {
+        tasksContainer.innerHTML = '';
+    }
 
-    // Impact
-    document.getElementById('modal-outcome').textContent = project.impact.outcome;
-    document.getElementById('modal-metrics').textContent = project.impact.metrics;
+    // Impact (Result)
+    const resultContainer = document.getElementById('modal-result');
+    if (project.result && project.result.length > 0) {
+        resultContainer.innerHTML = project.result.map(res => `<li>${res}</li>`).join('');
+    } else {
+        resultContainer.innerHTML = '';
+    }
 
     // Galleries (Xử lý khi mảng rỗng)
     const galleryContainer = document.getElementById('modal-galleries');
