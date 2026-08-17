@@ -4,44 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đoan Thùy | Content Creator & Leader</title>
-    <meta name="description" content="Portfolio của Lê Nguyễn Thị Đoan Thùy - Content Creator / Content Leader">
+    <meta name="description" content="Portfolio của Lê Nguyễn Thị Đoan Thùy - Content Creator, Content Leader với tư duy Full-Stack.">
     <link rel="stylesheet" href="styles.css">
+    <!-- Preload font hệ thống để tránh FOUT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Persistent Navigation -->
-    <nav class="sidebar">
-        <div class="nav-brand" id="nav-brand">ĐOAN THÙY</div>
-        <ul class="nav-links">
-            <li><a href="#hero" class="active">00 INTRO</a></li>
-            <li><a href="#about">01 ABOUT</a></li>
-            <li><a href="#skills">02 SKILLS</a></li>
-            <li><a href="#work">03 WORK</a></li>
-            <li><a href="#education">04 EDUCATION</a></li>
-            <li><a href="#contact">05 CONTACT</a></li>
-        </ul>
-        <div class="nav-progress-container"><div class="nav-progress" id="progress-bar"></div></div>
-    </nav>
 
-    <!-- Main Content Area -->
-    <main class="content" id="main-content">
-        <section id="hero" class="section"></section>
-        <section id="about" class="section"></section>
-        <section id="skills" class="section"></section>
-        <section id="work" class="section"></section>
-        <section id="education" class="section"></section>
-        <section id="contact" class="section"></section>
-    </main>
+    <div class="layout-wrapper">
+        <!-- Sticky Navigation Rail -->
+        <nav class="nav-rail" aria-label="Main Navigation">
+            <div class="nav-brand">
+                <a href="#hero">LNT. ĐOAN THÙY</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-item" data-target="about">01. About</a></li>
+                <li><a href="#expertise" class="nav-item" data-target="expertise">02. Expertise</a></li>
+                <li><a href="#projects" class="nav-item" data-target="projects">03. Selected Work</a></li>
+                <li><a href="#background" class="nav-item" data-target="background">04. Background</a></li>
+            </ul>
+            <div class="nav-contact-quick" id="nav-contact">
+                <!-- Injected via JS -->
+            </div>
+        </nav>
 
-    <!-- Native Dialog for Project Detail -->
-    <dialog id="project-modal">
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Hero Section -->
+            <section id="hero" class="section-hero">
+                <div class="hero-content">
+                    <p class="hero-greeting">Portfolio / Tác phẩm tuyển chọn</p>
+                    <h1 class="hero-name" id="hero-name"></h1>
+                    <h2 class="hero-title" id="hero-title"></h2>
+                    <p class="hero-positioning" id="hero-positioning"></p>
+
+                    <!-- Capability Index (Ngay dưới Hero) -->
+                    <div class="capability-index">
+                        <p class="micro-label">Khám phá năng lực cốt lõi</p>
+                        <ul class="index-list" id="index-list">
+                            <!-- Injected via JS -->
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section-about">
+                <div class="section-header">
+                    <h2 class="section-title">01. Về Tôi</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-overview" id="about-overview"></div>
+                    <div class="about-working-style">
+                        <h3 class="subsection-title">Working Style</h3>
+                        <div id="working-style-list"></div>
+                    </div>
+                    <div class="about-goals">
+                        <h3 class="subsection-title">Career Goals</h3>
+                        <div id="career-goals"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expertise & Skills Section -->
+            <section id="expertise" class="section-expertise">
+                <div class="section-header">
+                    <h2 class="section-title">02. Năng Lực Chuyên Môn</h2>
+                </div>
+                <div id="skills-container" class="skills-container">
+                    <!-- Injected via JS -->
+                </div>
+            </section>
+
+            <!-- Selected Work Section -->
+            <section id="projects" class="section-projects">
+                <div class="section-header">
+                    <h2 class="section-title">03. Dự Án Tiêu Biểu</h2>
+                </div>
+
+                <div class="project-filters" id="project-filters">
+                    <!-- Injected via JS -->
+                </div>
+
+                <div class="project-grid" id="project-grid">
+                    <!-- Injected via JS -->
+                </div>
+            </section>
+
+            <!-- Background (Education & Contact) -->
+            <section id="background" class="section-background">
+                <div class="section-header">
+                    <h2 class="section-title">04. Hành Trình & Liên Hệ</h2>
+                </div>
+                <div class="background-grid">
+                    <div class="education-block">
+                        <h3 class="subsection-title">Học Vấn & Chứng Chỉ</h3>
+                        <ul id="education-list" class="education-list"></ul>
+                    </div>
+                    <div class="contact-block">
+                        <h3 class="subsection-title">Kết Nối</h3>
+                        <div id="contact-details" class="contact-details"></div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <p>&copy; <span id="current-year"></span> Lê Nguyễn Thị Đoan Thùy. Portfolio.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- Native Dialog cho Project Detail -->
+    <dialog id="project-modal" class="project-modal">
         <div class="modal-content">
-            <button id="close-modal" aria-label="Close modal">✕ CLOSE</button>
-            <div id="modal-body"></div>
+            <header class="modal-header">
+                <span class="modal-category micro-label" id="modal-category"></span>
+                <button id="modal-close" class="btn-icon" aria-label="Đóng">✕</button>
+            </header>
+
+            <div class="modal-body">
+                <h2 id="modal-title" class="modal-title"></h2>
+                <div class="modal-overview" id="modal-overview"></div>
+
+                <div class="modal-meta-grid">
+                    <div class="meta-col">
+                        <span class="micro-label">Tôi đã làm gì</span>
+                        <p id="modal-role"></p>
+                    </div>
+                    <div class="meta-col">
+                        <span class="micro-label">Phạm vi</span>
+                        <p id="modal-scope"></p>
+                    </div>
+                    <div class="meta-col">
+                        <span class="micro-label">Phối hợp</span>
+                        <p id="modal-coordination"></p>
+                    </div>
+                </div>
+
+                <div class="modal-impact block-border">
+                    <span class="micro-label">Kết quả / Impact</span>
+                    <p id="modal-outcome" class="impact-text"></p>
+                    <p id="modal-metrics" class="impact-metrics"></p>
+                </div>
+
+                <div id="modal-galleries" class="modal-galleries">
+                    <!-- Injected via JS (Plan & Product images) -->
+                </div>
+            </div>
+
+            <footer class="modal-footer">
+                <button id="modal-prev" class="btn-text">← Dự án trước</button>
+                <button id="modal-next" class="btn-text">Dự án tiếp theo →</button>
+            </footer>
         </div>
     </dialog>
 
-    <!-- Load Data First, Then Logic -->
     <script src="data.js"></script>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

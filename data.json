@@ -1,4 +1,4 @@
-const portfolioData = {
+{
   "personal_info": {
     "name": "Lê Nguyễn Thị Đoan Thùy",
     "title": "Content Creator / Content Leader",
@@ -623,6 +623,3 @@ const portfolioData = {
     }
   ]
 }
-
-// Expose ra global để script.js có thể đọc
-window.portfolioData = portfolioData;
