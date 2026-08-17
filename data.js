@@ -9,10 +9,6 @@ const portfolioData = {
         {
           "platform": "Facebook",
           "url": "https://facebook.com/lenguyenthidoanthuy"
-        },
-        {
-          "platform": "Tiktok",
-          "url": "https://tiktok.com/doanthuyyy"
         }
       ]
     }
@@ -46,55 +42,25 @@ const portfolioData = {
     {
       "category": "Content Creation",
       "descriptions": [
-        {
-          "Phát triển nội dung": "Chuyển hóa ý tưởng thô thành nội dung đa dạng, từ long-form, short-form đến nội dung viral, bán hàng và xây dựng thương hiệu."
-        },
-        {
-          "Biên kịch": "Phát triển ý tưởng thành kịch bản phục vụ sản xuất video, đảm bảo nội dung rõ ràng, đúng insight và mục tiêu truyền thông."
-        },
-        {
-          "Social Content": "Triển khai nội dung trên các nền tảng, bao gồm caption, concept và thiết kế hình ảnh, phù hợp với từng format và định hướng thương hiệu."
-        }
+        "Phát triển nội dung: Chuyển hóa ý tưởng thô thành nội dung đa dạng, từ long-form, short-form đến nội dung viral, bán hàng và xây dựng thương hiệu.",
+        "Biên kịch: Phát triển ý tưởng thành kịch bản phục vụ sản xuất video, đảm bảo nội dung rõ ràng, đúng insight và mục tiêu truyền thông.",
+        "Social Content: Triển khai nội dung trên các nền tảng, bao gồm caption, concept và thiết kế hình ảnh, phù hợp với từng format và định hướng thương hiệu."
       ],
       "portfolios": [
         {
           "group_name": "Kịch bản mẫu",
           "items": [
-            {
-              "name": "kịch bản bán hàng",
-              "image_url": "./assets/circle.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "kịch bản viral",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "khung kịch bản mẫu",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "kịch bản bán hàng", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "kịch bản viral", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "khung kịch bản mẫu", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
           "group_name": "Bài viết mẫu",
           "items": [
-            {
-              "name": "branding",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "bán hàng",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "viral",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "branding", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "bán hàng", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "viral", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         }
       ]
@@ -102,35 +68,17 @@ const portfolioData = {
     {
       "category": "Videographer/Editor",
       "descriptions": [
-        {
-          "Định hướng hình ảnh": "Set up thiết bị, lựa chọn góc máy, bố cục và cách triển khai hình ảnh phù hợp với concept, nội dung và mục tiêu sản xuất."
-        },
-        {
-          "Video Production": "Trực tiếp quay phim, kiểm soát hình ảnh trong quá trình sản xuất và đảm bảo footage đáp ứng yêu cầu đầu ra đối với social media."
-        },
-        {
-          "Video Editing": "Biên tập, dựng và hoàn thiện video theo brief, format và định hướng hình ảnh; đảm bảo nhịp dựng, hình ảnh và nội dung phù hợp với mục tiêu truyền thông."
-        }
+        "Định hướng hình ảnh: Set up thiết bị, lựa chọn góc máy, bố cục và cách triển khai hình ảnh phù hợp với concept, nội dung và mục tiêu sản xuất.",
+        "Video Production: Trực tiếp quay phim, kiểm soát hình ảnh trong quá trình sản xuất và đảm bảo footage đáp ứng yêu cầu đầu ra đối với social media.",
+        "Video Editing: Biên tập, dựng và hoàn thiện video theo brief, format và định hướng hình ảnh; đảm bảo nhịp dựng, hình ảnh và nội dung phù hợp với mục tiêu truyền thông."
       ],
       "portfolios": [
         {
           "group_name": "Video mẫu",
           "items": [
-            {
-              "name": "short 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "short 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "video",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "short 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "short 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "video", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         }
       ]
@@ -138,195 +86,69 @@ const portfolioData = {
     {
       "category": "Photographer",
       "descriptions": [
-        {
-          "Portrait & Lifestyle Photography": "Chụp chân dung, lifestyle và concept theo nhiều bối cảnh, từ ảnh tốt nghiệp, concept Tết, biển đến các bộ ảnh có định hướng hình ảnh riêng."
-        },
-        {
-          "Product Photography": "Chụp sản phẩm, tĩnh vật và commercial, chú trọng bố cục, ánh sáng, chất liệu và cách thể hiện sản phẩm phù hợp với mục tiêu truyền thông."
-        },
-        {
-          "Creative Photography": "Phát triển cách tiếp cận hình ảnh dựa trên concept, mood & tone, chủ động lựa chọn góc máy, ánh sáng và bố cục để tạo ra hình ảnh có tính thẩm mỹ và đúng định hướng."
-        }
+        "Portrait & Lifestyle Photography: Chụp chân dung, lifestyle và concept theo nhiều bối cảnh, từ ảnh tốt nghiệp, concept Tết, biển đến các bộ ảnh có định hướng hình ảnh riêng.",
+        "Product Photography: Chụp sản phẩm, tĩnh vật và commercial, chú trọng bố cục, ánh sáng, chất liệu và cách thể hiện sản phẩm phù hợp với mục tiêu truyền thông.",
+        "Creative Photography: Phát triển cách tiếp cận hình ảnh dựa trên concept, mood & tone, chủ động lựa chọn góc máy, ánh sáng và bố cục để tạo ra hình ảnh có tính thẩm mỹ và đúng định hướng."
       ],
       "portfolios": [
         {
           "group_name": "Ảnh tốt nghiệp",
           "items": [
-            {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
           "group_name": "Ảnh biển",
           "items": [
-            {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
           "group_name": "Ảnh tết",
           "items": [
-            {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
           "group_name": "Ảnh sản phẩm sữa tắm",
           "items": [
-            {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
           "group_name": "Ảnh chai lọ salub",
           "items": [
-            {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
           "group_name": "Ảnh tĩnh vật",
           "items": [
-            {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         }
       ]
@@ -342,41 +164,17 @@ const portfolioData = {
         {
           "group_name": "Hậu trường 1",
           "items": [
-            {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
           "group_name": "Hậu trường 2",
           "items": [
-            {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 6",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 6", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         }
       ]
@@ -392,16 +190,8 @@ const portfolioData = {
         {
           "group_name": "sheet nội bộ",
           "items": [
-            {
-              "name": "Sheet 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Sheet 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Sheet 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Sheet 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         }
       ]
@@ -425,58 +215,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -493,58 +243,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         }
       ]
@@ -566,58 +276,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -634,58 +304,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -702,58 +332,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -770,58 +360,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -838,58 +388,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -906,58 +416,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -974,58 +444,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -1042,58 +472,18 @@ const portfolioData = {
             "Số liệu/Impact"
           ],
           "plan_images": [
-            {
-              "name": "Plan Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Plan Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         }
       ]
@@ -1116,31 +506,11 @@ const portfolioData = {
           ],
           "plan_images": [],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -1158,31 +528,11 @@ const portfolioData = {
           ],
           "plan_images": [],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -1200,31 +550,11 @@ const portfolioData = {
           ],
           "plan_images": [],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -1242,31 +572,11 @@ const portfolioData = {
           ],
           "plan_images": [],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -1284,31 +594,11 @@ const portfolioData = {
           ],
           "plan_images": [],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         },
         {
@@ -1326,31 +616,11 @@ const portfolioData = {
           ],
           "plan_images": [],
           "product_images": [
-            {
-              "name": "Product Image 1",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 2",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 3",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 4",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Product Image 5",
-              "image_url": "./assets/source.png",
-              "link": "https://linktosource"
-            }
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
           ]
         }
       ]
@@ -1363,11 +633,11 @@ const portfolioData = {
       "period": "2022 - nay"
     },
     {
-      "title": "Chứng chỉ MOS 3 kỹ năng Word, Excel, Power Point",
+      "title": "Chứng chỉ MOS 3 kỹ năng: Word, Excel, Power Point",
       "institution": null,
       "period": null
     }
   ]
-};
+}
 
 window.portfolioData = portfolioData;
