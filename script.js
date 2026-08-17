@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. Khởi tạo logic UI
     initScrollSpy();
     initProjectFiltering(data.featured_projects);
+
+    // 5. Khởi tạo Theme Switcher
+    initThemeSwitcher();
 });
 
 /* ==========================================================================
@@ -334,4 +337,35 @@ function initScrollSpy() {
     });
 
     sections.forEach(sec => observer.observe(sec));
+}
+
+/* ==========================================================================
+   THEME SWITCHER LOGIC
+   ========================================================================== */
+function initThemeSwitcher() {
+    const themeBtns = document.querySelectorAll('.theme-btn');
+    const root = document.documentElement;
+    // Bắt fallback lại light (nếu người dùng chưa từng chọn)
+    const currentTheme = localStorage.getItem('portfolio-theme') || 'light';
+
+    // Cập nhật trạng thái active ngay lập tức
+    updateActiveBtn(currentTheme);
+
+    themeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const theme = btn.getAttribute('data-theme-val');
+            root.setAttribute('data-theme', theme);
+            localStorage.setItem('portfolio-theme', theme);
+            updateActiveBtn(theme);
+        });
+    });
+
+    function updateActiveBtn(theme) {
+        themeBtns.forEach(b => {
+            b.classList.remove('active');
+            if (b.getAttribute('data-theme-val') === theme) {
+                b.classList.add('active');
+            }
+        });
+    }
 }

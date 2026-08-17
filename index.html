@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Inline script để thiết lập theme ngay lập tức, ngăn ngừa hiện tượng chớp nháy giao diện (FOUC) -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
 </head>
 <body>
 
@@ -24,10 +31,17 @@
                 <li><a href="#expertise" class="nav-item" data-target="expertise">02. Chuyên môn</a></li>
                 <li><a href="#projects" class="nav-item" data-target="projects">03. Dự án tiêu biểu</a></li>
                 <li><a href="#education" class="nav-item" data-target="education">04. Học vấn</a></li>
-                <li><a href="#contact" class="nav-item" data-target="contact">04. Liên hệ</a></li>
+                <li><a href="#contact" class="nav-item" data-target="contact">05. Liên hệ</a></li>
             </ul>
-            <div class="nav-contact-quick" id="nav-contact">
-                <!-- Injected via JS -->
+            <div class="nav-bottom">
+                <div class="theme-switcher" aria-label="Chọn giao diện">
+                    <button class="theme-btn" data-theme-val="light" aria-label="Giao diện Mệnh Thủy (Sáng)" title="Mệnh Thủy (Sáng)"></button>
+                    <button class="theme-btn" data-theme-val="dark" aria-label="Giao diện Tối" title="Tối"></button>
+                    <button class="theme-btn" data-theme-val="vintage" aria-label="Giao diện Cổ điển" title="Cổ điển"></button>
+                </div>
+                <div class="nav-contact-quick" id="nav-contact">
+                    <!-- Injected via JS -->
+                </div>
             </div>
         </nav>
 

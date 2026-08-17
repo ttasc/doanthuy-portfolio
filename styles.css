@@ -1,18 +1,18 @@
 /* ==========================================================================
    CSS VARIABLES & RESET
    ========================================================================== */
-:root {
+:root, [data-theme="light"] {
+    /* Colors - Bản mệnh Thủy (Tone sáng) */
+    --bg-color: #F0F4F8; /* Soft blue-grey */
+    --bg-surface: #FFFFFF;
+    --text-main: #0B192C; /* Deep navy / Blackish blue */
+    --text-muted: #475569;
+    --border-color: #CBD5E1;
+    --accent: #0284C7; /* Ocean blue */
+
     /* Typography */
     --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
     --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-
-    /* Colors - Warm minimal editorial */
-    --bg-color: #F7F7F4;
-    --bg-surface: #FFFFFF;
-    --text-main: #1A1A18;
-    --text-muted: #666660;
-    --border-color: #D6D6D0;
-    --accent: #B24C27; /* Rust/burnt orange accent */
 
     /* Layout */
     --rail-width: 240px;
@@ -24,6 +24,26 @@
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="dark"] {
+    /* Colors - Bản Dark (Tinh giản, dễ nhìn) */
+    --bg-color: #0F172A; /* Slate 900 */
+    --bg-surface: #1E293B; /* Slate 800 */
+    --text-main: #F8FAFC; /* Slate 50 */
+    --text-muted: #94A3B8; /* Slate 400 */
+    --border-color: #334155; /* Slate 700 */
+    --accent: #38BDF8; /* Sky blue */
+}
+
+[data-theme="vintage"] {
+    /* Colors - Bản Vintage (Cổ điển, trầm tĩnh) */
+    --bg-color: #E6DFD3; /* Old newspaper/paper */
+    --bg-surface: #F2ECE1;
+    --text-main: #2C241B; /* Dark ink */
+    --text-muted: #6B5D4E;
+    --border-color: #C1B4A1;
+    --accent: #9B3922; /* Classic rust / vintage red */
 }
 
 *, *::before, *::after {
@@ -43,6 +63,12 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    transition: background-color var(--transition-smooth), color var(--transition-smooth);
+}
+
+/* Ensure smooth theme transitions */
+.nav-rail, section, .modal-content, .modal-header, .modal-footer, .modal-impact, .project-card, .portfolio-item, .contact-meta-grid, .site-footer {
+    transition: background-color var(--transition-smooth), border-color var(--transition-smooth), color var(--transition-smooth);
 }
 
 a { text-decoration: none; color: inherit; }
@@ -100,7 +126,7 @@ h1, h2, h3, .font-serif { font-family: var(--font-serif); font-weight: 400; }
 .nav-item {
     font-size: 0.9rem;
     color: var(--text-muted);
-    transition: var(--transition-fast);
+    transition: all var(--transition-fast);
     position: relative;
     display: inline-block;
 }
@@ -112,6 +138,37 @@ h1, h2, h3, .font-serif { font-family: var(--font-serif); font-weight: 400; }
 }
 .nav-item:hover, .nav-item.active { color: var(--text-main); }
 .nav-item.active::before { opacity: 1; }
+
+.nav-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.theme-switcher {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.theme-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.theme-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.theme-btn[data-theme-val="light"] { background-color: #F0F4F8; }
+.theme-btn[data-theme-val="dark"] { background-color: #0F172A; }
+.theme-btn[data-theme-val="vintage"] { background-color: #E6DFD3; }
+.theme-btn:hover { transform: scale(1.1); }
+.theme-btn.active {
+    border-color: var(--accent);
+    transform: scale(1.2);
+    box-shadow: 0 0 0 2px var(--bg-color), 0 0 0 3px var(--accent);
+}
 
 .nav-contact-quick { font-size: 0.85rem; color: var(--text-muted); }
 
@@ -140,7 +197,7 @@ section {
     letter-spacing: 0.1em; font-size: 0.85rem; color: var(--accent);
     margin-bottom: 1rem;
 }
-.hero-name { font-size: clamp(3rem, 6vw, 6rem); line-height: 1; margin-bottom: 0.5rem; }
+.hero-name { font-size: clamp(3rem, 5vw, 5rem); line-height: 1; margin-bottom: 0.5rem; }
 .hero-title { font-family: var(--font-sans); font-weight: 300; font-size: clamp(1.5rem, 3vw, 2.5rem); color: var(--text-muted); margin-bottom: 2rem;}
 .hero-positioning { font-size: 1.1rem; max-width: 600px; margin-bottom: var(--spacing-lg); }
 
@@ -151,7 +208,7 @@ section {
 }
 .index-item a {
     display: block; padding-bottom: 1rem; border-bottom: 1px solid transparent;
-    transition: var(--transition-fast);
+    transition: border-bottom-color var(--transition-fast), transform var(--transition-fast);
 }
 .index-item a:hover { border-bottom-color: var(--text-main); transform: translateY(-2px); }
 .index-num { font-family: var(--font-serif); font-size: 1.5rem; color: var(--accent); display: block;}
@@ -197,6 +254,7 @@ section {
     position: absolute; bottom: 0; left: 0; right: 0; padding: 0.5rem;
     background: rgba(255,255,255,0.9); font-size: 0.8rem; transform: translateY(100%);
     transition: transform var(--transition-fast);
+    color: #1A1A18; /* Cố định màu dark text cho portfolio hover label */
 }
 .portfolio-item:hover .portfolio-name { transform: translateY(0); }
 
@@ -208,7 +266,7 @@ section {
 }
 .filter-btn {
     padding: 0.5rem 1.5rem; border: 1px solid var(--border-color); border-radius: 20px;
-    font-size: 0.85rem; color: var(--text-muted); transition: var(--transition-fast);
+    font-size: 0.85rem; color: var(--text-muted); transition: all var(--transition-fast);
 }
 .filter-btn:hover, .filter-btn.active {
     background: var(--text-main); color: var(--bg-surface); border-color: var(--text-main);
@@ -223,8 +281,8 @@ section {
 }
 .project-card:hover .project-card-title { color: var(--accent); }
 .project-card-cat { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.5rem; }
-.project-card-title { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 1rem; transition: var(--transition-fast);}
-.project-card-arrow { font-size: 1.2rem; color: var(--text-muted); transition: transform var(--transition-fast); display: inline-block;}
+.project-card-title { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 1rem; transition: color var(--transition-fast);}
+.project-card-arrow { font-size: 1.2rem; color: var(--text-muted); transition: transform var(--transition-fast), color var(--transition-fast); display: inline-block;}
 .project-card:hover .project-card-arrow { transform: translateX(5px); color: var(--accent); }
 
 /* ==========================================================================
@@ -234,8 +292,9 @@ section {
     margin: auto; width: 90vw; max-width: 900px; max-height: 90vh;
     background: var(--bg-surface); border: none; padding: 0;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1); outline: none;
+    color: var(--text-main);
 }
-.project-modal::backdrop { background: rgba(26, 26, 24, 0.6); backdrop-filter: blur(4px); }
+.project-modal::backdrop { background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px); }
 .modal-content { display: flex; flex-direction: column; height: 100%; max-height: 90vh; }
 .modal-header {
     display: flex; justify-content: space-between; align-items: center;
@@ -285,13 +344,14 @@ section {
     background: var(--bg-surface);
     border: 1px solid var(--text-main);
     border-radius: 50%;
+    transition: background-color var(--transition-smooth), border-color var(--transition-smooth);
 }
 .edu-title { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem; }
 .edu-meta { color: var(--text-muted); font-size: 1rem; }
-.edu-meta span:not(:last-child)::after { content: " — "; margin: 0 0.5rem; color: var(--border-color); }
+.edu-meta span:not(:last-child)::after { content: " — "; margin: 0 0.5rem; color: var(--border-color); transition: color var(--transition-smooth); }
 
 /* ==========================================================================
-   CONTACT SECTION (& BOOKING PREP)
+   CONTACT SECTION
    ========================================================================== */
 .section-contact { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; }
 .contact-layout { margin-top: 2rem; }
@@ -314,10 +374,6 @@ section {
 .contact-meta-item .micro-label { margin-bottom: 1rem; }
 .contact-meta-item a { font-size: 1.1rem; display: inline-block; margin-bottom: 0.5rem; transition: color var(--transition-fast); }
 .contact-meta-item a:hover { color: var(--accent); }
-
-/* Chuẩn bị cho Booking Section */
-.section-booking { background-color: var(--bg-surface); }
-.booking-form-container { max-width: 800px; padding: 2rem; border: 1px solid var(--border-color); }
 
 .site-footer { padding: 2rem var(--spacing-lg); border-top: 1px solid var(--border-color); text-align: center; font-size: 0.85rem; color: var(--text-muted); }
 
@@ -344,6 +400,12 @@ section {
     .nav-contact-quick { display: none; }
     .nav-item::before { display: none; }
     .nav-item.active { border-bottom: 2px solid var(--accent); padding-bottom: 2px;}
+
+    .nav-bottom {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 1.5rem;
+    }
 
     section { padding: var(--spacing-md) 1rem; }
     .hero-name { font-size: 2.5rem; }
