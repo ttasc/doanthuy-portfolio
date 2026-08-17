@@ -36,7 +36,7 @@ professional_skills:
       - group_name: Kịch bản mẫu
         items:
           - name: kịch bản bán hàng
-            image_url: ./assets/source.png
+            image_url: ./assets/circle.png
             link: https://linktosource
           - name: kịch bản viral
             image_url: ./assets/source.png

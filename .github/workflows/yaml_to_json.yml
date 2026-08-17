@@ -36,4 +36,4 @@ jobs:
           git add data.json
 
           # Chỉ commit nếu thực sự có thay đổi
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update data.json từ data.yaml" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update data.js from data.yaml" && git push)
