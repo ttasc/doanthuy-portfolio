@@ -1,0 +1,625 @@
+const portfolioData = {
+  "personal_info": {
+    "name": "Lê Nguyễn Thị Đoan Thùy",
+    "title": "Content Creator / Content Leader",
+    "contact": {
+      "email": "lentdoanthuy@gmail.com",
+      "phone": "0378258309",
+      "social_links": [
+        {
+          "platform": "Facebook",
+          "url": "https://facebook.com/lenguyenthidoanthuy"
+        }
+      ]
+    }
+  },
+  "about_me": {
+    "working_style": [
+      {
+        "title": "Tư duy Full-Stack",
+        "description": "Nhìn công việc từ chiến lược đến triển khai, kết nối Marketing – Content – Creative – Production – Performance thành một quy trình liền mạch, đảm bảo mọi khâu cùng hướng đến mục tiêu chung."
+      },
+      {
+        "title": "Tư duy Sáng tạo",
+        "description": "Luôn tìm kiếm những ý tưởng mới, khác biệt và có chất riêng. Tôi tin rằng sáng tạo không chỉ là tạo ra điều mới, mà còn là cách nhìn vấn đề từ nhiều góc độ để tìm ra những hướng tiếp cận thú vị và phù hợp."
+      },
+      {
+        "title": "Quyết liệt & Đồng đội",
+        "description": "Quyết liệt với mục tiêu, cẩn trọng trong quyết định. Chủ động hành động và chịu trách nhiệm với kết quả, đồng thời đề cao tinh thần đoàn kết, hỗ trợ và cùng nhau giải quyết vấn đề trong đội ngũ."
+      }
+    ],
+    "career_goals": {
+      "short_term": "Thăng tiến lên các vị trí cao hơn, đồng thời phát triển năng lực định hướng chiến lược, quản lý nhân sự và vận hành đội ngũ. Chủ động tích lũy kinh nghiệm thực tế để nâng cao khả năng dẫn dắt và tạo ra giá trị lớn hơn cho tổ chức.",
+      "long_term": "Góp phần vào sự phát triển bền vững của doanh nghiệp, đồng thời tích lũy nền tảng về chuyên môn, quản trị và kinh doanh để từng bước xây dựng thương hiệu cá nhân và phát triển doanh nghiệp riêng."
+    },
+    "experience_overview": [
+      "3+ năm kinh nghiệm trong lĩnh vực Marketing, tham gia nhiều dự án quy mô lớn tại TP.HCM và đồng hành cùng các thương hiệu hàng đầu Việt Nam. Sở hữu tư duy Full-Stack, nắm bắt quy trình từ xây dựng chiến lược, phát triển nội dung đến sản xuất và triển khai, góp phần thúc đẩy hiệu quả Social.",
+      "Bên cạnh các dự án thương mại, tham gia nhiều dự án nghệ thuật với đa dạng vai trò, từ đó hiểu rõ quy trình sản xuất từ ý tưởng đến thực thi và khả năng phối hợp với nhiều bộ phận trong quá trình triển khai.",
+      "Lập kế hoạch và vận hành đội ngũ gồm thành viên cốt lõi và cộng tác viên; phân công, phối hợp và theo sát tiến độ, đảm bảo chất lượng đầu ra và đúng deadline."
+    ]
+  },
+  "professional_skills": [
+    {
+      "category": "Content Creation",
+      "descriptions": [
+        "Phát triển nội dung: Chuyển hóa ý tưởng thô thành nội dung đa dạng, từ long-form, short-form đến nội dung viral, bán hàng và xây dựng thương hiệu.",
+        "Biên kịch: Phát triển ý tưởng thành kịch bản phục vụ sản xuất video, đảm bảo nội dung rõ ràng, đúng insight và mục tiêu truyền thông.",
+        "Social Content: Triển khai nội dung trên các nền tảng, bao gồm caption, concept và thiết kế hình ảnh, phù hợp với từng format và định hướng thương hiệu."
+      ],
+      "portfolios": [
+        {
+          "group_name": "Kịch bản mẫu",
+          "items": [
+            { "name": "kịch bản bán hàng", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "kịch bản viral", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "khung kịch bản mẫu", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "group_name": "Bài viết mẫu",
+          "items": [
+            { "name": "branding", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "bán hàng", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "viral", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Videographer/Editor",
+      "descriptions": [
+        "Định hướng hình ảnh: Set up thiết bị, lựa chọn góc máy, bố cục và cách triển khai hình ảnh phù hợp với concept, nội dung và mục tiêu sản xuất.",
+        "Video Production: Trực tiếp quay phim, kiểm soát hình ảnh trong quá trình sản xuất và đảm bảo footage đáp ứng yêu cầu đầu ra đối với social media.",
+        "Video Editing: Biên tập, dựng và hoàn thiện video theo brief, format và định hướng hình ảnh; đảm bảo nhịp dựng, hình ảnh và nội dung phù hợp với mục tiêu truyền thông."
+      ],
+      "portfolios": [
+        {
+          "group_name": "Video mẫu",
+          "items": [
+            { "name": "short 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "short 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "video", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Photographer",
+      "descriptions": [
+        "Portrait & Lifestyle Photography: Chụp chân dung, lifestyle và concept theo nhiều bối cảnh, từ ảnh tốt nghiệp, concept Tết, biển đến các bộ ảnh có định hướng hình ảnh riêng.",
+        "Product Photography: Chụp sản phẩm, tĩnh vật và commercial, chú trọng bố cục, ánh sáng, chất liệu và cách thể hiện sản phẩm phù hợp với mục tiêu truyền thông.",
+        "Creative Photography: Phát triển cách tiếp cận hình ảnh dựa trên concept, mood & tone, chủ động lựa chọn góc máy, ánh sáng và bố cục để tạo ra hình ảnh có tính thẩm mỹ và đúng định hướng."
+      ],
+      "portfolios": [
+        {
+          "group_name": "Ảnh tốt nghiệp",
+          "items": [
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "group_name": "Ảnh biển",
+          "items": [
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "group_name": "Ảnh tết",
+          "items": [
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "group_name": "Ảnh sản phẩm sữa tắm",
+          "items": [
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "group_name": "Ảnh chai lọ salub",
+          "items": [
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "group_name": "Ảnh tĩnh vật",
+          "items": [
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Production Crew Skill",
+      "descriptions": [
+        "Tham gia nhiều vai trò trong quá trình sản xuất phim, MV và các dự án nghệ thuật, từ Trợ lý đạo diễn (AD), Producer, Production Support đến BTS.",
+        "Nắm rõ quy trình phối hợp từ tiền kỳ, sản xuất đến hậu kỳ, hỗ trợ vận hành đoàn và đảm bảo tiến độ thực thi.",
+        "Có khả năng phối hợp đa bộ phận, xử lý tình huống và bám sát yêu cầu sản xuất để đảm bảo chất lượng đầu ra."
+      ],
+      "portfolios": [
+        {
+          "group_name": "Hậu trường 1",
+          "items": [
+            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "group_name": "Hậu trường 2",
+          "items": [
+            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Ảnh 6", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Team Planning & Operations",
+      "descriptions": [
+        "Xây dựng kế hoạch, định hướng công việc và phân bổ nguồn lực theo mục tiêu dự án.",
+        "Điều phối thành viên cốt lõi và cộng tác viên, theo sát tiến độ, phối hợp các đầu việc và xử lý vấn đề phát sinh.",
+        "Đảm bảo chất lượng đầu ra, tiến độ và hiệu quả vận hành của đội ngũ. Xây dựng kế hoạch, định hướng công việc và phân bổ nguồn lực theo mục tiêu dự án."
+      ],
+      "portfolios": [
+        {
+          "group_name": "sheet nội bộ",
+          "items": [
+            { "name": "Sheet 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Sheet 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "featured_projects": [
+    {
+      "category_name": "In-house Project",
+      "projects": [
+        {
+          "name": "Khỉ khô cười khi khổ",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Mini Hippo",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        }
+      ]
+    },
+    {
+      "category_name": "Medyart - Media team",
+      "projects": [
+        {
+          "name": "Bia Masan",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Intimate",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Beam Paws",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Phim: Ước mơ người hùng",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Video dự thi: Who am I?",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "MV: Bát cơm mặn",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Video: Báo cáo công tác - T17",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "MV: Tết là để",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [
+            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        }
+      ]
+    },
+    {
+      "category_name": "Freelance Project",
+      "projects": [
+        {
+          "name": "Staff SGT",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Mar Assi",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Kênh truyện",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "Tư tưởng hồ Chí Minh",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "TVC - Tô màu cuộc sống",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        },
+        {
+          "name": "BTS - MV Quá Là Thời Trang - Lamsaomai",
+          "overview": "<Mô tả tổng quan dự án>",
+          "main_tasks": {
+            "role": "Tôi đã làm gì",
+            "scope": "Phạm vi phụ trách",
+            "coordination": "Cách phối hợp"
+          },
+          "impact": {
+            "outcome": "Outcome",
+            "metrics": "Số liệu/Impact"
+          },
+          "plan_images": [],
+          "product_images": [
+            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
+            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Cử nhân Quản trị Văn Phòng",
+      "institution": "Đại học Sài Gòn",
+      "period": "2022 - nay"
+    },
+    {
+      "title": "Chứng chỉ MOS 3 kỹ năng: Word, Excel, Power Point",
+      "institution": null,
+      "period": null
+    }
+  ]
+}

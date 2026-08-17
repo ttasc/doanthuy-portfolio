@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đoan Thùy | Content Creator & Leader</title>
+    <meta name="description" content="Portfolio của Lê Nguyễn Thị Đoan Thùy - Content Creator / Content Leader">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Persistent Navigation -->
+    <nav class="sidebar">
+        <div class="nav-brand" id="nav-brand">ĐOAN THÙY</div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">00 INTRO</a></li>
+            <li><a href="#about">01 ABOUT</a></li>
+            <li><a href="#skills">02 SKILLS</a></li>
+            <li><a href="#work">03 WORK</a></li>
+            <li><a href="#education">04 EDUCATION</a></li>
+            <li><a href="#contact">05 CONTACT</a></li>
+        </ul>
+        <div class="nav-progress-container"><div class="nav-progress" id="progress-bar"></div></div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="content" id="main-content">
+        <section id="hero" class="section"></section>
+        <section id="about" class="section"></section>
+        <section id="skills" class="section"></section>
+        <section id="work" class="section"></section>
+        <section id="education" class="section"></section>
+        <section id="contact" class="section"></section>
+    </main>
+
+    <!-- Native Dialog for Project Detail -->
+    <dialog id="project-modal">
+        <div class="modal-content">
+            <button id="close-modal" aria-label="Close modal">✕ CLOSE</button>
+            <div id="modal-body"></div>
+        </div>
+    </dialog>
+
+    <!-- Load Data First, Then Logic -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
