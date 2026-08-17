@@ -9,7 +9,11 @@ const portfolioData = {
         {
           "platform": "Facebook",
           "url": "https://facebook.com/lenguyenthidoanthuy"
-        }
+        },
+        // {
+        //   "platform": "Github",
+        //   "url": "https://github.com/ttasc"
+        // }
       ]
     }
   },

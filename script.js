@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderAbout(data.about_me);
     renderSkills(data.professional_skills);
     renderProjects(data.featured_projects);
-    renderBackground(data.education, data.personal_info.contact);
+    renderEducation(data.education);
+    renderContact(data.personal_info.contact);
 
     // 4. Khởi tạo logic UI
     initScrollSpy();
@@ -122,31 +123,39 @@ function renderSkills(skills) {
     });
 }
 
-function renderBackground(education, contact) {
-    // Education
+function renderEducation(education) {
     const eduHtml = education.map(edu => `
         <li>
             <h4 class="edu-title">${edu.title}</h4>
             <div class="edu-meta">
                 ${edu.institution ? `<span>${edu.institution}</span>` : ''}
-                ${edu.period ? ` | <span>${edu.period}</span>` : ''}
+                ${edu.period ? `<span>${edu.period}</span>` : ''}
             </div>
         </li>
     `).join('');
     document.getElementById('education-list').innerHTML = eduHtml;
+}
 
-    // Contact
+function renderContact(contact) {
+    // Render Social Links
     let socialHtml = contact.social_links.map(link => `
-        <div class="contact-item">
-            <a href="${link.url}" target="_blank" rel="noopener">${link.platform} ↗</a>
-        </div>
+        <a href="${link.url}" target="_blank" rel="noopener">${link.platform} ↗</a><br>
     `).join('');
 
+    // Thiết kế phần Contact dạng Editorial với Email cực lớn
     document.getElementById('contact-details').innerHTML = `
-        <div class="contact-item"><a href="mailto:${contact.email}">${contact.email}</a></div>
-        <div class="contact-item"><a href="tel:${contact.phone}">${contact.phone}</a></div>
-        <br>
-        ${socialHtml}
+        <a href="mailto:${contact.email}" class="huge-email">${contact.email}</a>
+
+        <div class="contact-meta-grid">
+            <div class="contact-meta-item">
+                <span class="micro-label">Điện thoại</span>
+                <a href="tel:${contact.phone}">${contact.phone}</a>
+            </div>
+            <div class="contact-meta-item">
+                <span class="micro-label">Mạng xã hội</span>
+                ${socialHtml}
+            </div>
+        </div>
     `;
 }
 

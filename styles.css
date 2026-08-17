@@ -265,14 +265,59 @@ section {
 .btn-text:disabled { opacity: 0.3; cursor: not-allowed; }
 
 /* ==========================================================================
-   BACKGROUND SECTION
+   EDUCATION SECTION
    ========================================================================== */
-.background-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); }
-.education-list li { margin-bottom: 1.5rem; }
-.edu-title { font-weight: 600; font-size: 1.1rem; }
-.edu-meta { color: var(--text-muted); font-size: 0.9rem; }
-.contact-item { margin-bottom: 1rem; font-size: 1.1rem; }
-.contact-item a { border-bottom: 1px solid var(--text-main); padding-bottom: 2px; }
+.section-education { border-bottom: 1px solid var(--border-color); }
+.education-content { max-width: 800px; }
+.education-list li {
+    padding-left: 2rem;
+    border-left: 1px solid var(--text-main);
+    position: relative;
+    margin-bottom: 3rem;
+}
+.education-list li::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    width: 9px;
+    height: 9px;
+    background: var(--bg-surface);
+    border: 1px solid var(--text-main);
+    border-radius: 50%;
+}
+.edu-title { font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem; }
+.edu-meta { color: var(--text-muted); font-size: 1rem; }
+.edu-meta span:not(:last-child)::after { content: " — "; margin: 0 0.5rem; color: var(--border-color); }
+
+/* ==========================================================================
+   CONTACT SECTION (& BOOKING PREP)
+   ========================================================================== */
+.section-contact { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; }
+.contact-layout { margin-top: 2rem; }
+.contact-intro { font-size: 1.25rem; max-width: 600px; margin-bottom: 4rem; color: var(--text-muted); }
+
+/* Editorial huge contact link */
+.huge-email {
+    display: inline-block;
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    color: var(--text-main);
+    border-bottom: 2px solid var(--text-main);
+    margin-bottom: 3rem;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+.huge-email:hover { color: var(--accent); border-color: var(--accent); }
+
+.contact-meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; border-top: 1px solid var(--border-color); padding-top: 2rem; }
+.contact-meta-item .micro-label { margin-bottom: 1rem; }
+.contact-meta-item a { font-size: 1.1rem; display: inline-block; margin-bottom: 0.5rem; transition: color var(--transition-fast); }
+.contact-meta-item a:hover { color: var(--accent); }
+
+/* Chuẩn bị cho Booking Section */
+.section-booking { background-color: var(--bg-surface); }
+.booking-form-container { max-width: 800px; padding: 2rem; border: 1px solid var(--border-color); }
 
 .site-footer { padding: 2rem var(--spacing-lg); border-top: 1px solid var(--border-color); text-align: center; font-size: 0.85rem; color: var(--text-muted); }
 
