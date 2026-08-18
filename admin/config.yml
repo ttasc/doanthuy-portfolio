@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: tên-github-của-bạn/tên-repo-của-bạn # VD: ttasc/portfolio
-  branch: main
+  repo: ttasc/doanthuy-portfolio
+  branch: master
 
 media_folder: "assets"
 public_folder: "./assets"
@@ -12,19 +12,129 @@ collections:
     files:
       - label: "Nội dung Website"
         name: "data"
-        file: "data.json" # CMS sẽ chỉ ghi vào file JSON
+        file: "data.json"
         fields:
-          # Đây là nơi bạn map cấu trúc JSON. Ví dụ vài trường cơ bản:
-          - { name: "personal_info", label: "Thông tin cá nhân", widget: "object", fields: [
-              { name: "name", label: "Họ và tên", widget: "string" },
-              { name: "title", label: "Chức danh", widget: "string" }
-            ]}
-          # Khai báo list cho ảnh/portfolio:
-          - { name: "featured_projects", label: "Dự án tiêu biểu", widget: "list", fields: [
-              { name: "category_name", label: "Tên danh mục", widget: "string" },
-              { name: "projects", label: "Danh sách dự án", widget: "list", fields: [
-                  { name: "name", label: "Tên dự án", widget: "string" },
-                  { name: "thumbnail", label: "Ảnh Thumbnail", widget: "image" } # UI upload ảnh trực quan
-              ]}
-          ]}
-          # (Bạn tự map các trường còn lại theo đúng cấu trúc data hiện tại nhé)
+          # ==========================================
+          # 1. THÔNG TIN CÁ NHÂN (personal_info)
+          # ==========================================
+          - name: "personal_info"
+            label: "Thông tin cá nhân"
+            widget: "object"
+            fields:
+              - { name: "name", label: "Họ và tên", widget: "string" }
+              - { name: "title", label: "Chức danh", widget: "string" }
+              - name: "contact"
+                label: "Thông tin liên hệ"
+                widget: "object"
+                fields:
+                  - { name: "email", label: "Email", widget: "string" }
+                  - { name: "phone", label: "Số điện thoại", widget: "string" }
+                  - name: "social_links"
+                    label: "Mạng xã hội"
+                    widget: "list"
+                    fields:
+                      - { name: "platform", label: "Nền tảng (VD: Facebook)", widget: "string" }
+                      - { name: "url", label: "Đường dẫn (URL)", widget: "string" }
+
+          # ==========================================
+          # 2. GIỚI THIỆU BẢN THÂN (about_me)
+          # ==========================================
+          - name: "about_me"
+            label: "Giới thiệu bản thân"
+            widget: "object"
+            fields:
+              - name: "working_style"
+                label: "Phong cách làm việc"
+                widget: "list"
+                fields:
+                  - { name: "title", label: "Tiêu đề", widget: "string" }
+                  - { name: "description", label: "Mô tả chi tiết", widget: "text" }
+              - name: "career_goals"
+                label: "Mục tiêu nghề nghiệp"
+                widget: "object"
+                fields:
+                  - { name: "short_term", label: "Mục tiêu ngắn hạn", widget: "text" }
+                  - { name: "long_term", label: "Mục tiêu dài hạn", widget: "text" }
+              - name: "experience_overview"
+                label: "Tổng quan kinh nghiệm (Mỗi dòng 1 đoạn)"
+                widget: "list"
+                field: { name: "item", label: "Đoạn mô tả", widget: "text" }
+
+          # ==========================================
+          # 3. KỸ NĂNG CHUYÊN MÔN (professional_skills)
+          # ==========================================
+          - name: "professional_skills"
+            label: "Kỹ năng chuyên môn"
+            widget: "list"
+            fields:
+              - { name: "category", label: "Tên nhóm kỹ năng", widget: "string" }
+              - name: "descriptions"
+                label: "Các gạch đầu dòng mô tả kỹ năng"
+                widget: "list"
+                field: { name: "item", label: "Mô tả", widget: "text" }
+              - name: "portfolios"
+                label: "Danh sách Portfolio theo kỹ năng"
+                widget: "list"
+                required: false
+                fields:
+                  - { name: "group_name", label: "Tên thư mục/nhóm portfolio", widget: "string" }
+                  - name: "items"
+                    label: "Các ảnh/mục trong nhóm"
+                    widget: "list"
+                    fields:
+                      - { name: "name", label: "Tên hiển thị", widget: "string" }
+                      - { name: "image_url", label: "Hình ảnh", widget: "image" }
+                      - { name: "link", label: "Link đính kèm (nếu có)", widget: "string", required: false }
+
+          # ==========================================
+          # 4. DỰ ÁN TIÊU BIỂU (featured_projects)
+          # ==========================================
+          - name: "featured_projects"
+            label: "Dự án tiêu biểu"
+            widget: "list"
+            fields:
+              - { name: "category_name", label: "Tên danh mục (VD: In-house Project)", widget: "string" }
+              - name: "projects"
+                label: "Các dự án thuộc danh mục"
+                widget: "list"
+                fields:
+                  - { name: "name", label: "Tên dự án", widget: "string" }
+                  - { name: "thumbnail", label: "Ảnh Thumbnail", widget: "image" }
+                  - { name: "overview", label: "Tổng quan dự án", widget: "text", required: false }
+                  - name: "main_tasks"
+                    label: "Nhiệm vụ chính"
+                    widget: "list"
+                    required: false
+                    field: { name: "item", label: "Nhiệm vụ", widget: "string" }
+                  - name: "result"
+                    label: "Kết quả đạt được"
+                    widget: "list"
+                    required: false
+                    field: { name: "item", label: "Kết quả", widget: "string" }
+                  - name: "plan_images"
+                    label: "Hình ảnh Kế hoạch (Plan Images)"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - { name: "name", label: "Tên ảnh", widget: "string" }
+                      - { name: "image_url", label: "Hình ảnh", widget: "image" }
+                      - { name: "link", label: "Link đính kèm (nếu có)", widget: "string", required: false }
+                  - name: "product_images"
+                    label: "Hình ảnh Sản phẩm (Product Images)"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - { name: "name", label: "Tên ảnh", widget: "string" }
+                      - { name: "image_url", label: "Hình ảnh", widget: "image" }
+                      - { name: "link", label: "Link đính kèm (nếu có)", widget: "string", required: false }
+
+          # ==========================================
+          # 5. HỌC VẤN & CHỨNG CHỈ (education)
+          # ==========================================
+          - name: "education"
+            label: "Học vấn & Chứng chỉ"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Tên bằng cấp / Chứng chỉ", widget: "string" }
+              - { name: "institution", label: "Nơi đào tạo", widget: "string", required: false }
+              - { name: "period", label: "Thời gian (VD: 2022 - nay)", widget: "string", required: false }
