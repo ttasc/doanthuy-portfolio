@@ -52,7 +52,7 @@ const portfolioData = {
           "items": [
             {
               "name": "kịch bản bán hàng",
-              "image_url": "./assets/source.webp",
+              "image_url": "https://vi.wikipedia.org/static/images/icons/wikipedia.png",
               "link": "https://linktosource"
             },
             {
