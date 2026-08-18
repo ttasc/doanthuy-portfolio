@@ -17,18 +17,21 @@ collections:
           - name: "personal_info"
             label: "Thông tin cá nhân"
             widget: "object"
+            collapsed: true # Thu gọn mặc định
             fields:
               - { name: "name", label: "Họ và tên", widget: "string" }
               - { name: "title", label: "Chức danh", widget: "string" }
               - name: "contact"
                 label: "Thông tin liên hệ"
                 widget: "object"
+                collapsed: true
                 fields:
                   - { name: "email", label: "Email", widget: "string" }
                   - { name: "phone", label: "Số điện thoại", widget: "string" }
                   - name: "social_links"
                     label: "Mạng xã hội"
                     widget: "list"
+                    collapsed: true
                     fields:
                       - { name: "platform", label: "Nền tảng (VD: Facebook)", widget: "string" }
                       - { name: "url", label: "Đường dẫn (URL)", widget: "string" }
@@ -36,42 +39,50 @@ collections:
           - name: "about_me"
             label: "Giới thiệu bản thân"
             widget: "object"
+            collapsed: true
             fields:
               - name: "working_style"
                 label: "Phong cách làm việc"
                 widget: "list"
+                collapsed: true
                 fields:
                   - { name: "title", label: "Tiêu đề", widget: "string" }
                   - { name: "description", label: "Mô tả chi tiết", widget: "text" }
               - name: "career_goals"
                 label: "Mục tiêu nghề nghiệp"
                 widget: "object"
+                collapsed: true
                 fields:
                   - { name: "short_term", label: "Mục tiêu ngắn hạn", widget: "text" }
                   - { name: "long_term", label: "Mục tiêu dài hạn", widget: "text" }
               - name: "experience_overview"
                 label: "Tổng quan kinh nghiệm (Mỗi dòng 1 đoạn)"
                 widget: "list"
+                collapsed: true
                 field: { name: "item", widget: "text" }
 
           - name: "professional_skills"
             label: "Kỹ năng chuyên môn"
             widget: "list"
+            collapsed: true
             fields:
               - { name: "category", label: "Tên nhóm kỹ năng", widget: "string" }
               - name: "descriptions"
                 label: "Các gạch đầu dòng mô tả kỹ năng"
                 widget: "list"
+                collapsed: true
                 field: { name: "item", widget: "text" }
               - name: "portfolios"
                 label: "Danh sách Portfolio theo kỹ năng"
                 widget: "list"
+                collapsed: true
                 required: false
                 fields:
                   - { name: "group_name", label: "Tên thư mục/nhóm portfolio", widget: "string" }
                   - name: "items"
                     label: "Các ảnh/mục trong nhóm"
                     widget: "list"
+                    collapsed: true
                     fields:
                       - { name: "name", label: "Tên hiển thị", widget: "string" }
                       - { name: "image_url", label: "Hình ảnh", widget: "image" }
@@ -80,11 +91,13 @@ collections:
           - name: "featured_projects"
             label: "Dự án tiêu biểu"
             widget: "list"
+            collapsed: true
             fields:
               - { name: "category_name", label: "Tên danh mục", widget: "string" }
               - name: "projects"
                 label: "Các dự án thuộc danh mục"
                 widget: "list"
+                collapsed: true
                 fields:
                   - { name: "name", label: "Tên dự án", widget: "string" }
                   - { name: "thumbnail", label: "Ảnh Thumbnail", widget: "image" }
@@ -92,16 +105,19 @@ collections:
                   - name: "main_tasks"
                     label: "Nhiệm vụ chính"
                     widget: "list"
+                    collapsed: true
                     required: false
                     field: { name: "item", widget: "string" }
                   - name: "result"
                     label: "Kết quả đạt được"
                     widget: "list"
+                    collapsed: true
                     required: false
                     field: { name: "item", widget: "string" }
                   - name: "plan_images"
                     label: "Hình ảnh Kế hoạch (Plan Images)"
                     widget: "list"
+                    collapsed: true
                     required: false
                     fields:
                       - { name: "name", label: "Tên ảnh", widget: "string" }
@@ -110,6 +126,7 @@ collections:
                   - name: "product_images"
                     label: "Hình ảnh Sản phẩm (Product Images)"
                     widget: "list"
+                    collapsed: true
                     required: false
                     fields:
                       - { name: "name", label: "Tên ảnh", widget: "string" }
@@ -119,6 +136,7 @@ collections:
           - name: "education"
             label: "Học vấn & Chứng chỉ"
             widget: "list"
+            collapsed: true
             fields:
               - { name: "title", label: "Tên bằng cấp / Chứng chỉ", widget: "string" }
               - { name: "institution", label: "Nơi đào tạo", widget: "string", required: false }
