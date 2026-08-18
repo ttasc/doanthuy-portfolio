@@ -131,23 +131,13 @@
           "group_name": "Ảnh tốt nghiệp",
           "items": [
             {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "/assets/circle.webp",
-              "link": "https://linktosource"
-            },
-            {
               "name": "Ảnh 3",
-              "image_url": "./assets/source.webp",
+              "image_url": "/assets/kncm_1.post-viral.webp",
               "link": "https://linktosource"
             },
             {
               "name": "Ảnh 4",
-              "image_url": "./assets/source.webp",
+              "image_url": "/assets/kncm_3.anh-tot-nghiep-1.webp",
               "link": "https://linktosource"
             },
             {
