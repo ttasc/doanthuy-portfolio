@@ -36,14 +36,17 @@ def build_data():
     with open('data.json', 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Tìm tất cả link ảnh .jpg/.png trong file JSON và sửa thành .webp một cách an toàn
-    content = re.sub(r'(\./assets/[^"\'\s]+)\.(jpg|jpeg|png)', r'\1.webp', content, flags=re.IGNORECASE)
+    # 1. Chuyển tất cả link ảnh jpg/png thành .webp (Bao gồm cả /assets hay ./assets)
+    content = re.sub(r'([./]*assets/[^"\'\s]+)\.(jpg|jpeg|png)', r'\1.webp', content, flags=re.IGNORECASE)
 
-    # Ghi lại data.json (để Sveltia CMS nhận diện đúng ảnh webp trong lần edit sau)
+    # Ghi lại data.json (để CMS nhận diện đúng ảnh webp trong lần edit sau)
     with open('data.json', 'w', encoding='utf-8') as f:
         f.write(content)
 
-    # Đóng gói thành data.js cho Frontend sử dụng (Đúng với yêu cầu không đổi cơ chế load của bạn)
+    # 2. CHUẨN HOÁ: Ép tất cả "/assets/" thành "./assets/" để không bị lỗi 404 trên Github Pages
+    content = re.sub(r'"/assets/', '"./assets/', content)
+
+    # Đóng gói thành data.js cho Frontend sử dụng
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(f"const portfolioData = {content};\n\nwindow.portfolioData = portfolioData;\n")
 
