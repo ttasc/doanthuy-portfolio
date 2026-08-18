@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: ttasc/doanthuy-portfolio
-  branch: master
+  branch: v1
 
 media_folder: "assets"
 public_folder: "/assets"
