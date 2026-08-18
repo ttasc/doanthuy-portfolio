@@ -1,18 +1,21 @@
 // script.js
+
+window.FALLBACK_IMAGE = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'%3E%3Crect width='100%25' height='100%25' fill='%23f1f5f9'/%3E%3Cpath d='M80 240 L160 140 L240 240 Z' fill='%23cbd5e1'/%3E%3Cpath d='M180 240 L220 180 L280 240 Z' fill='%2394a3b8'/%3E%3Ccircle cx='100' cy='100' r='24' fill='%23cbd5e1'/%3E%3C/svg%3E";
+
+window.handleImgErr = function(img) {
+    img.onerror = null;
+    img.src = window.FALLBACK_IMAGE;
+};
+
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        // 1. Fetch data.json trực tiếp
         const response = await fetch('./data.json');
         if (!response.ok) throw new Error("Không thể tải file dữ liệu.");
         const data = await response.json();
 
-        // 2. SUCKLESS LOGIC: Hàm đệ quy chuẩn hóa đường dẫn ảnh ngay trên Client
-        // Đổi toàn bộ "/assets/..." thành "./assets/..." để web không bị lỗi 404
         const fixImagePaths = (obj) => {
             for (let key in obj) {
                 if (typeof obj[key] === 'string') {
-                    // Regex: Nếu chuỗi bắt đầu bằng "/assets/" hoặc "assets/" thì đổi thành "./assets/"
-                    // Nếu đã là "./assets/" hoặc "http..." thì bỏ qua (giữ nguyên).
                     if (/^\/?assets\//.test(obj[key])) {
                         obj[key] = obj[key].replace(/^\/?assets\//, './assets/');
                     }
@@ -23,14 +26,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
         fixImagePaths(data);
 
-        // Gán vào window để các hàm cũ phía dưới vẫn hoạt động bình thường
         window.portfolioData = data;
 
-        // 3. DOM Elements Cache
         const currentYear = document.getElementById('current-year');
         if(currentYear) currentYear.textContent = new Date().getFullYear();
 
-        // 4. Khởi tạo các hàm Render (Giữ nguyên y hệt source cũ của bạn)
         renderHero(data.personal_info, data.about_me);
         renderAbout(data.about_me);
         renderSkills(data.professional_skills);
@@ -38,11 +38,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderEducation(data.education);
         renderContact(data.personal_info.contact);
 
-        // 5. Khởi tạo logic UI
         initScrollSpy();
         initProjectFiltering(data.featured_projects);
-
-        // 6. Khởi tạo Theme Switcher
         initThemeSwitcher();
 
     } catch (error) {
@@ -59,11 +56,9 @@ function renderHero(info, about) {
     document.getElementById('hero-name').textContent = info.name;
     document.getElementById('hero-title').textContent = info.title;
 
-    // Lấy câu đầu tiên trong working style làm positioning statement
     const positioning = about.working_style[0].description;
     document.getElementById('hero-positioning').textContent = positioning;
 
-    // Contact ở Nav
     const navContact = document.getElementById('nav-contact');
     navContact.innerHTML = `
         <p>${info.contact.email}</p>
@@ -72,11 +67,9 @@ function renderHero(info, about) {
 }
 
 function renderAbout(about) {
-    // Overview
     const overviewHtml = about.experience_overview.map(p => `<p>${p}</p>`).join('');
     document.getElementById('about-overview').innerHTML = overviewHtml;
 
-    // Working Style
     const styleHtml = about.working_style.map(style => `
         <div class="working-style-item">
             <h4 class="working-style-title">${style.title}</h4>
@@ -85,7 +78,6 @@ function renderAbout(about) {
     `).join('');
     document.getElementById('working-style-list').innerHTML = styleHtml;
 
-    // Goals
     document.getElementById('career-goals').innerHTML = `
         <p><strong>Ngắn hạn:</strong> ${about.career_goals.short_term}</p>
         <p><strong>Dài hạn:</strong> ${about.career_goals.long_term}</p>
@@ -100,7 +92,6 @@ function renderSkills(skills) {
         const num = String(index + 1).padStart(2, '0');
         const skillId = `skill-${index}`;
 
-        // 1. Tạo mục lục ở Hero
         const indexLi = document.createElement('li');
         indexLi.className = 'index-item';
         indexLi.innerHTML = `
@@ -111,7 +102,6 @@ function renderSkills(skills) {
         `;
         indexList.appendChild(indexLi);
 
-        // 2. Tạo phần Detail
         const descriptions = skill.descriptions.map(desc => `<li>${desc}</li>`).join('');
 
         let portfoliosHtml = '';
@@ -119,7 +109,7 @@ function renderSkills(skills) {
             portfoliosHtml = skill.portfolios.map(group => {
                 const itemsHtml = group.items.map(item => `
                     <a href="${item.link !== 'https://linktosource' ? item.link : '#'}" class="portfolio-item" target="_blank" rel="noopener">
-                        <img src="${item.image_url}" alt="${item.name}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 400 300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23eee\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' fill=\\'%23999\\'>No Image</text></svg>'">
+                        <img src="${item.image_url}" alt="${item.name}" loading="lazy" onerror="handleImgErr(this)">
                         <span class="portfolio-name">${item.name}</span>
                     </a>
                 `).join('');
@@ -165,12 +155,10 @@ function renderEducation(education) {
 }
 
 function renderContact(contact) {
-    // Render Social Links
     let socialHtml = contact.social_links.map(link => `
         <a href="${link.url}" target="_blank" rel="noopener">${link.platform} ↗</a><br>
     `).join('');
 
-    // Thiết kế phần Contact dạng Editorial với Email cực lớn
     document.getElementById('contact-details').innerHTML = `
         <a href="mailto:${contact.email}" class="huge-email">${contact.email}</a>
 
@@ -188,7 +176,7 @@ function renderContact(contact) {
 }
 
 /* ==========================================================================
-   PROJECT LOGIC & DIALOG (MODAL)
+   PROJECT LOGIC & DIALOG (MODAL) ĐÃ FIX TƯƠNG THÍCH IOS CŨ
    ========================================================================== */
 
 let flatProjects = [];
@@ -198,19 +186,15 @@ let currentProjectIndex = 0;
 function renderProjects(categories) {
     const filterContainer = document.getElementById('project-filters');
 
-    // Nút "Tất cả"
     filterContainer.innerHTML = `<button class="filter-btn active" data-filter="All">All Projects</button>`;
 
-    // Flatten data & tạo nút filter
     categories.forEach(cat => {
-        // Render filter buttons
         const btn = document.createElement('button');
         btn.className = 'filter-btn';
         btn.dataset.filter = cat.category_name;
         btn.textContent = cat.category_name;
         filterContainer.appendChild(btn);
 
-        // Add category info to items and push to flat array
         cat.projects.forEach(proj => {
             proj._category = cat.category_name;
             flatProjects.push(proj);
@@ -228,11 +212,10 @@ function drawProjectGrid(projects) {
     projects.forEach((proj, idx) => {
         const card = document.createElement('div');
         card.className = 'project-card';
-        // Thiết kế lại cấu trúc Card: Tách inner thành 2 phần Left (Thumbnail) và Right (Content)
         card.innerHTML = `
             <div class="project-card-inner">
                 <div class="project-thumbnail">
-                    <img src="${proj.thumbnail || './assets/source.png'}" alt="${proj.name}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 400 300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23eee\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' fill=\\'%23999\\'>No Image</text></svg>'">
+                    <img src="${proj.thumbnail || './assets/source.png'}" alt="${proj.name}" loading="lazy" onerror="handleImgErr(this)">
                 </div>
                 <div class="project-card-content">
                     <div class="project-card-cat">${proj._category}</div>
@@ -251,7 +234,6 @@ function initProjectFiltering() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     filterBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            // Update active state
             filterBtns.forEach(b => b.classList.remove('active'));
             e.target.classList.add('active');
 
@@ -261,7 +243,6 @@ function initProjectFiltering() {
             } else {
                 currentFilteredProjects = flatProjects.filter(p => p._category === filterVal);
             }
-            // Add subtle fade effect
             const grid = document.getElementById('project-grid');
             grid.style.opacity = '0';
             setTimeout(() => {
@@ -273,15 +254,23 @@ function initProjectFiltering() {
     });
 }
 
-// Modal Logic
 const modal = document.getElementById('project-modal');
 const closeBtn = document.getElementById('modal-close');
 const prevBtn = document.getElementById('modal-prev');
 const nextBtn = document.getElementById('modal-next');
 
-closeBtn.addEventListener('click', () => modal.close());
+// Hàm chuẩn hóa đóng Modal (Chạy được trên mọi dòng máy)
+function closeModalNative() {
+    if (typeof modal.close === 'function') {
+        modal.close();
+    } else {
+        modal.removeAttribute('open');
+        modal.classList.remove('polyfill-open');
+    }
+}
 
-// Đóng modal khi click ra ngoài backdrop
+closeBtn.addEventListener('click', closeModalNative);
+
 modal.addEventListener('click', (e) => {
     const dialogDimensions = modal.getBoundingClientRect();
     if (
@@ -290,7 +279,7 @@ modal.addEventListener('click', (e) => {
         e.clientY < dialogDimensions.top ||
         e.clientY > dialogDimensions.bottom
     ) {
-        modal.close();
+        closeModalNative();
     }
 });
 
@@ -310,7 +299,6 @@ function openModal(index, projectList) {
     document.getElementById('modal-title').textContent = project.name;
     document.getElementById('modal-overview').innerHTML = project.overview;
 
-    // Meta data (Main tasks)
     const tasksContainer = document.getElementById('modal-tasks');
     if (project.main_tasks && project.main_tasks.length > 0) {
         tasksContainer.innerHTML = project.main_tasks.map(task => `<li>${task}</li>`).join('');
@@ -318,7 +306,6 @@ function openModal(index, projectList) {
         tasksContainer.innerHTML = '';
     }
 
-    // Impact (Result)
     const resultContainer = document.getElementById('modal-result');
     if (project.result && project.result.length > 0) {
         resultContainer.innerHTML = project.result.map(res => `<li>${res}</li>`).join('');
@@ -326,31 +313,32 @@ function openModal(index, projectList) {
         resultContainer.innerHTML = '';
     }
 
-    // Galleries (Xử lý khi mảng rỗng)
     const galleryContainer = document.getElementById('modal-galleries');
     galleryContainer.innerHTML = '';
 
     const renderImgGrid = (title, images) => {
         if (!images || images.length === 0) return '';
-        const imgs = images.map(img => `<img src="${img.image_url}" alt="${img.name}" loading="lazy">`).join('');
+        const imgs = images.map(img => `<img src="${img.image_url}" alt="${img.name}" loading="lazy" onerror="handleImgErr(this)">`).join('');
         return `<h4>${title}</h4><div class="modal-img-grid">${imgs}</div>`;
     };
 
     galleryContainer.innerHTML += renderImgGrid('Plan / Strategy Images', project.plan_images);
     galleryContainer.innerHTML += renderImgGrid('Product / Execution Images', project.product_images);
 
-    // Update nút điều hướng
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === projectList.length - 1;
 
-    modal.showModal();
-    // Scroll content modal lên top
+    // Hỗ trợ dự phòng (Polyfill) nếu Safari quá cũ không có hàm showModal
+    if (typeof modal.showModal === 'function') {
+        modal.showModal();
+    } else {
+        modal.setAttribute('open', '');
+        modal.classList.add('polyfill-open');
+    }
+
     modal.querySelector('.modal-body').scrollTop = 0;
 }
 
-/* ==========================================================================
-   SCROLL SPY LOGIC (Highlight menu khi cuộn)
-   ========================================================================== */
 function initScrollSpy() {
     const sections = document.querySelectorAll('section[id]');
     const navItems = document.querySelectorAll('.nav-item');
@@ -372,23 +360,18 @@ function initScrollSpy() {
             });
         }
     }, {
-        rootMargin: '-20% 0px -70% 0px', // Trigger vùng giữa màn hình
+        rootMargin: '-20% 0px -70% 0px',
         threshold: 0
     });
 
     sections.forEach(sec => observer.observe(sec));
 }
 
-/* ==========================================================================
-   THEME SWITCHER LOGIC
-   ========================================================================== */
 function initThemeSwitcher() {
     const themeBtns = document.querySelectorAll('.theme-btn');
     const root = document.documentElement;
-    // Bắt fallback lại light (nếu người dùng chưa từng chọn)
     const currentTheme = localStorage.getItem('portfolio-theme') || 'light';
 
-    // Cập nhật trạng thái active ngay lập tức
     updateActiveBtn(currentTheme);
 
     themeBtns.forEach(btn => {

@@ -240,25 +240,51 @@ section {
 .skill-description li { margin-bottom: 0.5rem; }
 
 /* Portfolios inside skills */
-.portfolio-group { margin-bottom: var(--spacing-md); }
-.group-name { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; color: var(--text-main); }
+.portfolio-group { margin-bottom: var(--spacing-lg); }
+.group-name { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem; color: var(--text-main); font-weight: 600;}
+
+/* FLEXBOX ĐỂ CÂN BẰNG DIỆN TÍCH (AREA) GIỮA ẢNH DỌC VÀ NGANG */
 .portfolio-grid {
-    column-width: 200px;
-    column-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
 }
+
 .portfolio-item {
-    background: #eee; position: relative; overflow: hidden;
-    display: inline-block; width: 100%; border: 1px solid var(--border-color);
-    break-inside: avoid; margin-bottom: 1rem;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    transform: translateZ(0);
+    flex: 0 0 auto;
 }
-.portfolio-item img { width: 100%; height: auto; display: block; transition: transform var(--transition-smooth); }
+
+.portfolio-item img {
+    max-width: min(320px, 100vw - 3rem);
+    max-height: 320px;
+    width: auto;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-smooth);
+}
+
 .portfolio-item:hover img { transform: scale(1.05); }
+
 .portfolio-name {
-    position: absolute; bottom: 0; left: 0; right: 0; padding: 0.5rem;
-    background: rgba(255,255,255,0.9); font-size: 0.8rem; transform: translateY(100%);
+    position: absolute; bottom: 0; left: 0; right: 0; padding: 0.75rem;
+    background: rgba(255,255,255,0.95); font-size: 0.85rem; font-weight: 500;
+    transform: translateY(100%);
     transition: transform var(--transition-fast);
-    color: #1A1A18; /* Cố định màu dark text cho portfolio hover label */
+    color: #1A1A18;
+    backdrop-filter: blur(4px);
+    text-align: center;
 }
+
 .portfolio-item:hover .portfolio-name { transform: translateY(0); }
 
 /* ==========================================================================
@@ -291,7 +317,6 @@ section {
     align-items: center;
     gap: 1.5rem;
 }
-/* Thumbnail giờ đây là một khối bo góc 16px (squircle) cực tinh tế */
 .project-thumbnail {
     width: 90px;
     height: 90px;
@@ -317,16 +342,40 @@ section {
 .project-card:hover .project-card-arrow { transform: translateX(5px); color: var(--accent); }
 
 /* ==========================================================================
-   NATIVE DIALOG (MODAL)
+   NATIVE DIALOG (MODAL) ĐÃ FIX LỖI SAFARI/IPHONE
    ========================================================================== */
 .project-modal {
-    margin: auto; width: 90vw; max-width: 900px; max-height: 90vh;
+    margin: auto; width: 90vw; max-width: 900px;
+    max-height: 85dvh; /* Dùng dvh thay cho vh để tránh thanh địa chỉ của Safari đẩy modal lên trên */
     background: var(--bg-surface); border: none; padding: 0;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1); outline: none;
     color: var(--text-main);
+    border-radius: 12px;
+    overflow: hidden; /* Cực kỳ quan trọng để cắt viền trên Safari */
 }
-.project-modal::backdrop { background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px); }
-.modal-content { display: flex; flex-direction: column; height: 100%; max-height: 90vh; }
+
+/* Fallback Polyfill cho iOS đời cũ (Không hỗ trợ Native Dialog) */
+.project-modal.polyfill-open {
+    display: block;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0 0 0 100vw rgba(0,0,0,0.6), 0 20px 40px rgba(0,0,0,0.1); /* Giả lập lớp kính mờ */
+}
+
+.project-modal::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: blur(4px); /* Hỗ trợ Blur trên iOS */
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    display: flex; flex-direction: column;
+    width: 100%;
+    max-height: inherit; /* FIX SẬP HEIGHT SAFARI: Không được dùng height 100% ở đây */
+}
+
 .modal-header {
     display: flex; justify-content: space-between; align-items: center;
     padding: 1.5rem 2rem; border-bottom: 1px solid var(--border-color);
@@ -334,7 +383,13 @@ section {
 }
 .btn-icon { font-size: 1.5rem; color: var(--text-main); transition: transform var(--transition-fast); }
 .btn-icon:hover { transform: rotate(90deg); }
-.modal-body { padding: 2rem; overflow-y: auto; flex: 1; }
+
+.modal-body {
+    padding: 2rem;
+    overflow-y: auto;
+    flex: 1 1 auto; /* FIX cuộn Flexbox trên Safari */
+    -webkit-overflow-scrolling: touch; /* Kích hoạt cuộn mượt nguyên bản của iPhone */
+}
 .modal-title { font-size: 2.5rem; margin-bottom: 1rem; }
 .modal-overview { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; }
 
@@ -348,7 +403,7 @@ section {
     line-height: 1.6;
 }
 
-.modal-impact { padding: 1.5rem; border: 1px solid var(--border-color); background: var(--bg-color); margin-bottom: 2rem;}
+.modal-impact { padding: 1.5rem; border: 1px solid var(--border-color); background: var(--bg-color); margin-bottom: 2rem; border-radius: 8px;}
 .impact-list {
     list-style: none;
     margin-top: 0.5rem;
@@ -370,8 +425,24 @@ section {
 }
 
 .modal-galleries h4 { font-family: var(--font-serif); font-size: 1.5rem; margin: 2rem 0 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;}
-.modal-img-grid { column-width: 150px; column-gap: 1rem; }
-.modal-img-grid img { width: 100%; height: auto; display: inline-block; border: 1px solid var(--border-color); break-inside: avoid; margin-bottom: 1rem; }
+
+.modal-img-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.modal-img-grid img {
+    max-width: min(300px, 100%);
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: block;
+    flex: 0 0 auto;
+}
 
 .modal-footer {
     display: flex; justify-content: space-between; padding: 1rem 2rem;
