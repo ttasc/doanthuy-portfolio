@@ -50,17 +50,41 @@
         {
           "group_name": "Kịch bản mẫu",
           "items": [
-            { "name": "kịch bản bán hàng", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "kịch bản viral", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "khung kịch bản mẫu", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "kịch bản bán hàng",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "kịch bản viral",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "khung kịch bản mẫu",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
           "group_name": "Bài viết mẫu",
           "items": [
-            { "name": "branding", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "bán hàng", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "viral", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "branding",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "bán hàng",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "viral",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         }
       ]
@@ -76,9 +100,21 @@
         {
           "group_name": "Video mẫu",
           "items": [
-            { "name": "short 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "short 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "video", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "short 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "short 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "video",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         }
       ]
@@ -94,61 +130,181 @@
         {
           "group_name": "Ảnh tốt nghiệp",
           "items": [
-            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Ảnh 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 2",
+              "image_url": "/assets/circle.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
           "group_name": "Ảnh biển",
           "items": [
-            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Ảnh 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
           "group_name": "Ảnh tết",
           "items": [
-            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Ảnh 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
           "group_name": "Ảnh sản phẩm sữa tắm",
           "items": [
-            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Ảnh 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
           "group_name": "Ảnh chai lọ salub",
           "items": [
-            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Ảnh 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
           "group_name": "Ảnh tĩnh vật",
           "items": [
-            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Ảnh 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         }
       ]
@@ -164,17 +320,41 @@
         {
           "group_name": "Hậu trường 1",
           "items": [
-            { "name": "Ảnh 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 3", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Ảnh 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
           "group_name": "Hậu trường 2",
           "items": [
-            { "name": "Ảnh 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 5", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Ảnh 6", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Ảnh 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Ảnh 6",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         }
       ]
@@ -190,8 +370,16 @@
         {
           "group_name": "sheet nội bộ",
           "items": [
-            { "name": "Sheet 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Sheet 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Sheet 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Sheet 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         }
       ]
@@ -215,18 +403,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -243,18 +471,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         }
       ]
@@ -276,18 +544,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -304,18 +612,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -332,18 +680,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -360,18 +748,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -388,18 +816,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -416,18 +884,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -444,18 +952,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -472,18 +1020,58 @@
             "Số liệu/Impact"
           ],
           "plan_images": [
-            { "name": "Plan Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Plan Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Plan Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Plan Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         }
       ]
@@ -506,11 +1094,31 @@
           ],
           "plan_images": [],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -528,11 +1136,31 @@
           ],
           "plan_images": [],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -550,11 +1178,31 @@
           ],
           "plan_images": [],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -572,11 +1220,31 @@
           ],
           "plan_images": [],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -594,11 +1262,31 @@
           ],
           "plan_images": [],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         },
         {
@@ -616,11 +1304,31 @@
           ],
           "plan_images": [],
           "product_images": [
-            { "name": "Product Image 1", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 2", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 3", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 4", "image_url": "./assets/source.png", "link": "https://linktosource" },
-            { "name": "Product Image 5", "image_url": "./assets/source.png", "link": "https://linktosource" }
+            {
+              "name": "Product Image 1",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 2",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 3",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 4",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            },
+            {
+              "name": "Product Image 5",
+              "image_url": "./assets/source.png",
+              "link": "https://linktosource"
+            }
           ]
         }
       ]
@@ -634,8 +1342,8 @@
     },
     {
       "title": "Chứng chỉ MOS 3 kỹ năng: Word, Excel, Power Point",
-      "institution": null,
-      "period": null
+      "institution": "",
+      "period": ""
     }
   ]
 }
