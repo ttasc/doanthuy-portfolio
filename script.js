@@ -1,5 +1,4 @@
 // script.js
-// script.js
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         // 1. Fetch data.json trực tiếp
@@ -51,13 +50,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.body.innerHTML = "<h2 style='padding: 2rem; text-align:center;'>Đang cập nhật hệ thống. Vui lòng quay lại sau!</h2>";
     }
 });
-
-/* ==========================================================================
-   RENDER FUNCTIONS (Phần phía dưới này bạn GIỮ NGUYÊN CODE CŨ 100%)
-   ========================================================================== */
-// function renderHero(info, about) { ... }
-// function renderAbout(about) { ... }
-// ...
 
 /* ==========================================================================
    RENDER FUNCTIONS
@@ -127,7 +119,7 @@ function renderSkills(skills) {
             portfoliosHtml = skill.portfolios.map(group => {
                 const itemsHtml = group.items.map(item => `
                     <a href="${item.link !== 'https://linktosource' ? item.link : '#'}" class="portfolio-item" target="_blank" rel="noopener">
-                        <img src="${item.image_url}" alt="${item.name}" loading="lazy" width="400" height="300" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'400\\' height=\\'300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23eee\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' fill=\\'%23999\\'>No Image</text></svg>'">
+                        <img src="${item.image_url}" alt="${item.name}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 400 300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23eee\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' fill=\\'%23999\\'>No Image</text></svg>'">
                         <span class="portfolio-name">${item.name}</span>
                     </a>
                 `).join('');
@@ -240,7 +232,7 @@ function drawProjectGrid(projects) {
         card.innerHTML = `
             <div class="project-card-inner">
                 <div class="project-thumbnail">
-                    <img src="${proj.thumbnail || './assets/source.png'}" alt="${proj.name}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'400\\' height=\\'300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23eee\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' fill=\\'%23999\\'>No Image</text></svg>'">
+                    <img src="${proj.thumbnail || './assets/source.png'}" alt="${proj.name}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 400 300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23eee\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' fill=\\'%23999\\'>No Image</text></svg>'">
                 </div>
                 <div class="project-card-content">
                     <div class="project-card-cat">${proj._category}</div>
