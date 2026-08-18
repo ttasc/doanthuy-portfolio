@@ -1,31 +1,63 @@
 // script.js
-document.addEventListener('DOMContentLoaded', () => {
-    // 1. Lấy dữ liệu
-    const data = window.portfolioData;
-    if (!data) {
-        console.error("Không tìm thấy portfolioData. Đảm bảo data.js được load trước script.js");
-        return;
+// script.js
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        // 1. Fetch data.json trực tiếp
+        const response = await fetch('./data.json');
+        if (!response.ok) throw new Error("Không thể tải file dữ liệu.");
+        const data = await response.json();
+
+        // 2. SUCKLESS LOGIC: Hàm đệ quy chuẩn hóa đường dẫn ảnh ngay trên Client
+        // Đổi toàn bộ "/assets/..." thành "./assets/..." để web không bị lỗi 404
+        const fixImagePaths = (obj) => {
+            for (let key in obj) {
+                if (typeof obj[key] === 'string') {
+                    // Regex: Nếu chuỗi bắt đầu bằng "/assets/" hoặc "assets/" thì đổi thành "./assets/"
+                    // Nếu đã là "./assets/" hoặc "http..." thì bỏ qua (giữ nguyên).
+                    if (/^\/?assets\//.test(obj[key])) {
+                        obj[key] = obj[key].replace(/^\/?assets\//, './assets/');
+                    }
+                } else if (typeof obj[key] === 'object' && obj[key] !== null) {
+                    fixImagePaths(obj[key]);
+                }
+            }
+        };
+        fixImagePaths(data);
+
+        // Gán vào window để các hàm cũ phía dưới vẫn hoạt động bình thường
+        window.portfolioData = data;
+
+        // 3. DOM Elements Cache
+        const currentYear = document.getElementById('current-year');
+        if(currentYear) currentYear.textContent = new Date().getFullYear();
+
+        // 4. Khởi tạo các hàm Render (Giữ nguyên y hệt source cũ của bạn)
+        renderHero(data.personal_info, data.about_me);
+        renderAbout(data.about_me);
+        renderSkills(data.professional_skills);
+        renderProjects(data.featured_projects);
+        renderEducation(data.education);
+        renderContact(data.personal_info.contact);
+
+        // 5. Khởi tạo logic UI
+        initScrollSpy();
+        initProjectFiltering(data.featured_projects);
+
+        // 6. Khởi tạo Theme Switcher
+        initThemeSwitcher();
+
+    } catch (error) {
+        console.error("Lỗi khởi tạo Web:", error);
+        document.body.innerHTML = "<h2 style='padding: 2rem; text-align:center;'>Đang cập nhật hệ thống. Vui lòng quay lại sau!</h2>";
     }
-
-    // 2. DOM Elements Cache
-    const currentYear = document.getElementById('current-year');
-    currentYear.textContent = new Date().getFullYear();
-
-    // 3. Khởi tạo các hàm Render
-    renderHero(data.personal_info, data.about_me);
-    renderAbout(data.about_me);
-    renderSkills(data.professional_skills);
-    renderProjects(data.featured_projects);
-    renderEducation(data.education);
-    renderContact(data.personal_info.contact);
-
-    // 4. Khởi tạo logic UI
-    initScrollSpy();
-    initProjectFiltering(data.featured_projects);
-
-    // 5. Khởi tạo Theme Switcher
-    initThemeSwitcher();
 });
+
+/* ==========================================================================
+   RENDER FUNCTIONS (Phần phía dưới này bạn GIỮ NGUYÊN CODE CŨ 100%)
+   ========================================================================== */
+// function renderHero(info, about) { ... }
+// function renderAbout(about) { ... }
+// ...
 
 /* ==========================================================================
    RENDER FUNCTIONS
