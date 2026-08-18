@@ -3,7 +3,7 @@ name: Tối ưu Nội dung & Hình ảnh
 on:
   push:
     branches:
-      - main # (hoặc master tùy cấu hình repo của bạn)
+      - master
     paths:
       - 'data.json'
       - 'assets/**'
