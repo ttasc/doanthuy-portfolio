@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: tên-github-của-bạn/tên-repo-của-bạn # VD: ttasc/portfolio
+  branch: main
+
+media_folder: "assets"
+public_folder: "./assets"
+
+collections:
+  - name: "portfolio"
+    label: "Dữ liệu Website"
+    files:
+      - label: "Nội dung Website"
+        name: "data"
+        file: "data.json" # CMS sẽ chỉ ghi vào file JSON
+        fields:
+          # Đây là nơi bạn map cấu trúc JSON. Ví dụ vài trường cơ bản:
+          - { name: "personal_info", label: "Thông tin cá nhân", widget: "object", fields: [
+              { name: "name", label: "Họ và tên", widget: "string" },
+              { name: "title", label: "Chức danh", widget: "string" }
+            ]}
+          # Khai báo list cho ảnh/portfolio:
+          - { name: "featured_projects", label: "Dự án tiêu biểu", widget: "list", fields: [
+              { name: "category_name", label: "Tên danh mục", widget: "string" },
+              { name: "projects", label: "Danh sách dự án", widget: "list", fields: [
+                  { name: "name", label: "Tên dự án", widget: "string" },
+                  { name: "thumbnail", label: "Ảnh Thumbnail", widget: "image" } # UI upload ảnh trực quan
+              ]}
+          ]}
+          # (Bạn tự map các trường còn lại theo đúng cấu trúc data hiện tại nhé)
