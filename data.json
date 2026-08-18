@@ -144,6 +144,16 @@
               "name": "Ảnh 5",
               "image_url": "/assets/kncm_3.anh-tot-nghiep-2.webp",
               "link": "https://linktosource"
+            },
+            {
+              "name": "a",
+              "image_url": "/assets/kncm_2.video-mau-1.webp",
+              "link": "b"
+            },
+            {
+              "name": "d",
+              "image_url": "/assets/kncm_4.story1.webp",
+              "link": ""
             }
           ]
         },
