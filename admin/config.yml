@@ -14,9 +14,6 @@ collections:
         name: "data"
         file: "data.json"
         fields:
-          # ==========================================
-          # 1. THÔNG TIN CÁ NHÂN (personal_info)
-          # ==========================================
           - name: "personal_info"
             label: "Thông tin cá nhân"
             widget: "object"
@@ -36,9 +33,6 @@ collections:
                       - { name: "platform", label: "Nền tảng (VD: Facebook)", widget: "string" }
                       - { name: "url", label: "Đường dẫn (URL)", widget: "string" }
 
-          # ==========================================
-          # 2. GIỚI THIỆU BẢN THÂN (about_me)
-          # ==========================================
           - name: "about_me"
             label: "Giới thiệu bản thân"
             widget: "object"
@@ -58,11 +52,8 @@ collections:
               - name: "experience_overview"
                 label: "Tổng quan kinh nghiệm (Mỗi dòng 1 đoạn)"
                 widget: "list"
-                field: { name: "item", label: "Đoạn mô tả", widget: "text" }
+                field: { name: "item", widget: "text" }
 
-          # ==========================================
-          # 3. KỸ NĂNG CHUYÊN MÔN (professional_skills)
-          # ==========================================
           - name: "professional_skills"
             label: "Kỹ năng chuyên môn"
             widget: "list"
@@ -71,7 +62,7 @@ collections:
               - name: "descriptions"
                 label: "Các gạch đầu dòng mô tả kỹ năng"
                 widget: "list"
-                field: { name: "item", label: "Mô tả", widget: "text" }
+                field: { name: "item", widget: "text" }
               - name: "portfolios"
                 label: "Danh sách Portfolio theo kỹ năng"
                 widget: "list"
@@ -86,14 +77,11 @@ collections:
                       - { name: "image_url", label: "Hình ảnh", widget: "image" }
                       - { name: "link", label: "Link đính kèm (nếu có)", widget: "string", required: false }
 
-          # ==========================================
-          # 4. DỰ ÁN TIÊU BIỂU (featured_projects)
-          # ==========================================
           - name: "featured_projects"
             label: "Dự án tiêu biểu"
             widget: "list"
             fields:
-              - { name: "category_name", label: "Tên danh mục (VD: In-house Project)", widget: "string" }
+              - { name: "category_name", label: "Tên danh mục", widget: "string" }
               - name: "projects"
                 label: "Các dự án thuộc danh mục"
                 widget: "list"
@@ -105,12 +93,12 @@ collections:
                     label: "Nhiệm vụ chính"
                     widget: "list"
                     required: false
-                    field: { name: "item", label: "Nhiệm vụ", widget: "string" }
+                    field: { name: "item", widget: "string" }
                   - name: "result"
                     label: "Kết quả đạt được"
                     widget: "list"
                     required: false
-                    field: { name: "item", label: "Kết quả", widget: "string" }
+                    field: { name: "item", widget: "string" }
                   - name: "plan_images"
                     label: "Hình ảnh Kế hoạch (Plan Images)"
                     widget: "list"
@@ -128,9 +116,6 @@ collections:
                       - { name: "image_url", label: "Hình ảnh", widget: "image" }
                       - { name: "link", label: "Link đính kèm (nếu có)", widget: "string", required: false }
 
-          # ==========================================
-          # 5. HỌC VẤN & CHỨNG CHỈ (education)
-          # ==========================================
           - name: "education"
             label: "Học vấn & Chứng chỉ"
             widget: "list"
