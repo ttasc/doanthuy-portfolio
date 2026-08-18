@@ -241,9 +241,9 @@ const portfolioData = {
               "link": "https://linktosource"
             },
             {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "ảnhbim bo",
+              "image_url": "./assets/KNCM_3.Ảnh sản phẩm 3.JPG",
+              "link": "https://chatgpt.com/c/6a806781-9ef0-83ec-9389-e88e3f8e1215"
             }
           ]
         },
