@@ -71,19 +71,19 @@
           "group_name": "Bài viết mẫu",
           "items": [
             {
-              "name": "branding",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Branding",
+              "image_url": "/assets/kncm_1.post-branding.webp",
+              "link": "https://canva.link/lwxqhovlw43bzm0"
             },
             {
-              "name": "bán hàng",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Sale",
+              "image_url": "/assets/kncm_1.post-ban-hang.webp",
+              "link": "https://www.facebook.com/share/p/17X4RPJCzA/"
             },
             {
-              "name": "viral",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Viral",
+              "image_url": "/assets/kncm_1.post-viral.webp",
+              "link": "https://www.facebook.com/share/p/164hNTpmd9p/"
             }
           ]
         }
