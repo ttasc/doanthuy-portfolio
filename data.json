@@ -51,19 +51,19 @@
           "group_name": "Kịch bản mẫu",
           "items": [
             {
-              "name": "kịch bản bán hàng",
-              "image_url": "https://vi.wikipedia.org/static/images/icons/wikipedia.png",
-              "link": "https://linktosource"
+              "name": "Kịch bản video mẫu",
+              "image_url": "/assets/kncm_1.kichbanmau.webp",
+              "link": "https://docs.google.com/spreadsheets/d/14yVj0epgsX32o9m0wdjw0Vd33CyLbFu79v33isW-J-8/edit?usp=sharing"
             },
             {
-              "name": "kịch bản viral",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Brief editor",
+              "image_url": "/assets/kncm_1.banbriefeditor.webp",
+              "link": "https://docs.google.com/spreadsheets/d/12eS-a7vGQSVpGXSr1tfr333antSkRgjS7jtMz2Zs3LA/edit?usp=sharing"
             },
             {
-              "name": "khung kịch bản mẫu",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Kịch bản phim ngắn",
+              "image_url": "/assets/kncm_1.kichbanphim.webp",
+              "link": "https://docs.google.com/document/d/1pm8-aX7Z_ElpASux7x7p6qSwdY2n2MgUP6nCwPglQxA/edit?usp=sharing"
             }
           ]
         },
