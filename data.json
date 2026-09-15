@@ -167,12 +167,12 @@
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "/assets/IMG_5905.JPG",
+              "image_url": "/assets/img_5905.webp",
               "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             },
             {
               "name": "Ảnh 2",
-              "image_url": "/assets/IMG_5907.JPG",
+              "image_url": "/assets/img_5907.webp",
               "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             },
             {
@@ -182,7 +182,7 @@
             },
             {
               "name": "Ảnh 4",
-              "image_url": "/assets/IMG_6150.JPG",
+              "image_url": "/assets/img_6150.webp",
               "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             }
           ]
