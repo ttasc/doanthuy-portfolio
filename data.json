@@ -167,12 +167,12 @@
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "/assets/img_5905.webp",
+              "image_url": "/assets/IMG_5905.JPG",
               "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             },
             {
               "name": "Ảnh 2",
-              "image_url": "/assets/img_5907.webp",
+              "image_url": "/assets/IMG_5907.JPG",
               "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             },
             {
@@ -182,7 +182,7 @@
             },
             {
               "name": "Ảnh 4",
-              "image_url": "/assets/img_6150.webp",
+              "image_url": "/assets/IMG_6150.JPG",
               "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             }
           ]
@@ -192,7 +192,7 @@
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "/assets/kncm_3.tet1.webp",
+              "image_url": "/assets/KNCM_3.Tet1.JPG",
               "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
@@ -202,17 +202,17 @@
             },
             {
               "name": "Ảnh 3",
-              "image_url": "/assets/kncm_3.tet3.webp",
+              "image_url": "/assets/KNCM_3.Tet3.JPG",
               "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
               "name": "Ảnh 4",
-              "image_url": "/assets/kncm_3.tet4.webp",
+              "image_url": "/assets/KNCM_3.Tet4.JPG",
               "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
               "name": "Ảnh 5",
-              "image_url": "/assets/kncm_3tet5.webp",
+              "image_url": "/assets/KNCM_3Tet5.JPG",
               "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             }
           ]
