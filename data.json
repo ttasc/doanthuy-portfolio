@@ -163,32 +163,27 @@
           ]
         },
         {
-          "group_name": "Ảnh biển",
+          "group_name": "Concept Biển",
           "items": [
             {
               "name": "Ảnh 1",
               "image_url": "/assets/img_5905.webp",
-              "link": "https://linktosource"
+              "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             },
             {
               "name": "Ảnh 2",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/img_5907.webp",
+              "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             },
             {
               "name": "Ảnh 3",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/img_6122copy.webp",
+              "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             },
             {
               "name": "Ảnh 4",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/img_6150.webp",
+              "link": "https://drive.google.com/drive/folders/1KDNXN-LpLVQL37TGAOufiH5oN23rYTRj?usp=drive_link"
             }
           ]
         },
@@ -197,28 +192,28 @@
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.tet1.webp",
+              "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
               "name": "Ảnh 2",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.tet2.webp",
+              "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
               "name": "Ảnh 3",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.tet3.webp",
+              "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
               "name": "Ảnh 4",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.tet4.webp",
+              "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
               "name": "Ảnh 5",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3tet5.webp",
+              "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             }
           ]
         },
