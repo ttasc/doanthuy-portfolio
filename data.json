@@ -218,92 +218,62 @@
           ]
         },
         {
-          "group_name": "Ảnh sản phẩm sữa tắm",
+          "group_name": "Sản phẩm - Sữa tắm Beam Paws",
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.anh-san-pham-1.webp",
+              "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
             },
             {
               "name": "Ảnh 2",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.anh-san-pham-2.webp",
+              "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
             },
             {
               "name": "Ảnh 3",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.anh-san-pham-3.webp",
+              "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
             },
             {
               "name": "Ảnh 4",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "ảnhbim bo",
-              "image_url": "/assets/source.webp",
-              "link": "https://chatgpt.com/c/6a806781-9ef0-83ec-9389-e88e3f8e1215"
-            }
-          ]
-        },
-        {
-          "group_name": "Ảnh chai lọ salub",
-          "items": [
-            {
-              "name": "Ảnh 1",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 2",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 3",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.anh-san-pham-5.webp",
+              "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
             },
             {
               "name": "Ảnh 5",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.anh-san-pham4.webp",
+              "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
             }
           ]
         },
         {
-          "group_name": "Ảnh tĩnh vật",
+          "group_name": "Sự kiện - Salub",
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.su-kien-salub-vn1.webp",
+              "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
             },
             {
               "name": "Ảnh 2",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.su-kien-salub-vn2.webp",
+              "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
             },
             {
               "name": "Ảnh 3",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_3.su-kien-salub-vn3.webp",
+              "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
             },
             {
               "name": "Ảnh 4",
+              "image_url": "/assets/kncm_3.su-kien-salub-vn4.webp",
+              "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
+            },
+            {
+              "name": "Ảnh 5",
               "image_url": "/assets/kncm_3.su-kien-salub-vn5.webp",
-              "link": "https://linktosource"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
             }
           ]
         }
