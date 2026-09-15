@@ -51,13 +51,13 @@
           "group_name": "Kịch bản mẫu",
           "items": [
             {
-              "name": "Kịch bản video mẫu",
+              "name": "Kịch bản video ngắn",
               "image_url": "/assets/kncm_1.kichbanmau.webp",
               "link": "https://docs.google.com/spreadsheets/d/14yVj0epgsX32o9m0wdjw0Vd33CyLbFu79v33isW-J-8/edit?usp=sharing"
             },
             {
-              "name": "Brief editor",
-              "image_url": "/assets/kncm_1.banbriefeditor.webp",
+              "name": "Kịch bản video chạy ads",
+              "image_url": "/assets/kncm_kichbanmau2.webp",
               "link": "https://docs.google.com/spreadsheets/d/12eS-a7vGQSVpGXSr1tfr333antSkRgjS7jtMz2Zs3LA/edit?usp=sharing"
             },
             {
