@@ -167,7 +167,7 @@
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "./assets/source.webp",
+              "image_url": "/assets/img_5905.webp",
               "link": "https://linktosource"
             },
             {
