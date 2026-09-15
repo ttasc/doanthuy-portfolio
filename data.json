@@ -289,6 +289,11 @@
               "name": "Ảnh 3",
               "image_url": "/assets/kncm_4.production-4.webp",
               "link": "https://drive.google.com/drive/folders/116O2yFG4UxhGhKfUyasODhFhzmtv8AzC?usp=drive_link"
+            },
+            {
+              "name": "Ảnh 4",
+              "image_url": "/assets/kncm_4.production-5.webp",
+              "link": "https://drive.google.com/drive/folders/116O2yFG4UxhGhKfUyasODhFhzmtv8AzC?usp=drive_link"
             }
           ]
         },
@@ -347,15 +352,18 @@
         {
           "name": "Khỉ khô cười khi khổ",
           "thumbnail": "./assets/circle.webp",
-          "overview": "<Mô tả tổng quan dự án>",
+          "overview": "Show Hài độc thoại dành cho những ai đang muốn đi lên nhưng thấy đời đi xuống, được ra đời với mong muốn trở thành show hài độc thoại đứng thứ 2 Việt Nam. Được sáng lập bởi Tùng BT: KOL - chuyên gia trong giới khởi nghiệp hơn 17 năm kinh nghiệm.",
           "main_tasks": [
-            "Tôi đã làm gì",
-            "Phạm vi phụ trách",
-            "Cách phối hợp"
+            "Sáng tạo nội dung post, story cho fanpage Khỉ Khô cười khi khổ. Brief nội dung  video cho các kênh youtube, tiktok. Tối ưu thuật toán Youtube.",
+            "Tham gia lập kế hoạch marketing, branding. Phân tích nội dung, tối ưu hóa, đo lường hiệu quả,...",
+            "Viết Email chăm sóc khách hàng, kịch bản telesale",
+            "Làm việc với nhiều KOL, KOC, Influencer: Lân Jee, Comedian Phương Nam, Minh Ti, Hiếu BK,...",
+            "Hỗ trợ sản xuất tiết mục “Pitching sản phẩm: Horse Về” tại chương trình Shark Tank Việt Nam mùa 7"
           ],
           "result": [
-            "Outcome",
-            "Số liệu/Impact"
+            "Videp pitching đạt hơn 5 triệu lượt xem trên mọi nền tảng từ chương trình Shark Tank Việt Nam",
+            "Tổ chức thành công nhiều show diễn cháy vé liên tục, trong đó có các chủ đề độc đáo như “Hái Lầm Quả Lắm Hài,” “Nghĩ Điên Làm Hài.” Có cộng đồng khán giả “Người Thân” ổn định qua mỗi show diễn chỉ trong 3 tháng đầu chào sân. Bán ra trung bình 50 vé/show.",
+            "Tiktok: đạt 5k follow trong 4 tháng, có nhiều video viral. Facebook: Tăng 15k reach trong tháng đầu, đạt trung bình 50k reach mỗi tháng. Youtube: Đạt 849 người đăng ký, 59 video, tổng 164.063 views"
           ],
           "plan_images": [
             {
