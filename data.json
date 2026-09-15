@@ -101,19 +101,24 @@
           "group_name": "Video mẫu",
           "items": [
             {
-              "name": "short 1",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Short 1",
+              "image_url": "/assets/kncm_2.video-mau-1.webp",
+              "link": "https://drive.google.com/file/d/1XzTCD6eznKyoX8gH2LMY5hLaSYvYDcSt/view?usp=drive_link"
             },
             {
-              "name": "short 2",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Short 2",
+              "image_url": "/assets/kncm_2.video-mau-2.webp",
+              "link": "https://drive.google.com/file/d/17yccdJXAJ1F_mUpHxousetKzQdGlLtMv/view?usp=drive_link"
             },
             {
-              "name": "video",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Short 3",
+              "image_url": "/assets/kncm_2.video-mau-3.webp",
+              "link": "https://drive.google.com/file/d/1xG6dK728aA9XxfuXUUqo-plEl3Mr1-Z1/view?usp=drive_link"
+            },
+            {
+              "name": "Short 4",
+              "image_url": "/assets/clip-3-cover-copy.webp",
+              "link": "https://drive.google.com/file/d/1EcNQ8jeCAlfxJw3qb35UoImzIrr9T6EP/view?usp=drive_link"
             }
           ]
         }
