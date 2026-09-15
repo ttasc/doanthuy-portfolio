@@ -192,7 +192,7 @@
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "/assets/KNCM_3.Tet1.JPG",
+              "image_url": "/assets/kncm_3.tet1.webp",
               "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
@@ -202,17 +202,12 @@
             },
             {
               "name": "Ảnh 3",
-              "image_url": "/assets/KNCM_3.Tet3.JPG",
+              "image_url": "/assets/kncm_3.tet3.webp",
               "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             },
             {
               "name": "Ảnh 4",
-              "image_url": "/assets/KNCM_3.Tet4.JPG",
-              "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
-            },
-            {
-              "name": "Ảnh 5",
-              "image_url": "/assets/KNCM_3Tet5.JPG",
+              "image_url": "/assets/kncm_3tet5.webp",
               "link": "https://drive.google.com/drive/folders/1pRhdCj96cVBWZpV9mkcCReaf_8sSNO6h?usp=drive_link"
             }
           ]
@@ -227,21 +222,16 @@
             },
             {
               "name": "Ảnh 2",
-              "image_url": "/assets/kncm_3.anh-san-pham-2.webp",
-              "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
-            },
-            {
-              "name": "Ảnh 3",
               "image_url": "/assets/kncm_3.anh-san-pham-3.webp",
               "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
             },
             {
-              "name": "Ảnh 4",
+              "name": "Ảnh 3",
               "image_url": "/assets/kncm_3.anh-san-pham-5.webp",
               "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
             },
             {
-              "name": "Ảnh 5",
+              "name": "Ảnh 4",
               "image_url": "/assets/kncm_3.anh-san-pham4.webp",
               "link": "https://drive.google.com/drive/folders/1BsUTEuHhdGB73YTEQ2eLUDovJbgvkHJq?usp=drive_link"
             }
@@ -252,26 +242,21 @@
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "/assets/kncm_3.su-kien-salub-vn1.webp",
-              "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
-            },
-            {
-              "name": "Ảnh 2",
               "image_url": "/assets/kncm_3.su-kien-salub-vn2.webp",
               "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
             },
             {
-              "name": "Ảnh 3",
+              "name": "Ảnh 2",
               "image_url": "/assets/kncm_3.su-kien-salub-vn3.webp",
               "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
             },
             {
-              "name": "Ảnh 4",
+              "name": "Ảnh 3",
               "image_url": "/assets/kncm_3.su-kien-salub-vn4.webp",
               "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
             },
             {
-              "name": "Ảnh 5",
+              "name": "Ảnh 4",
               "image_url": "/assets/kncm_3.su-kien-salub-vn5.webp",
               "link": "https://drive.google.com/drive/folders/1mN201jmPs-QLkLXb2A5T-398hG5ysrco?usp=drive_link"
             }
