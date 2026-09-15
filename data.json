@@ -273,42 +273,42 @@
       ],
       "portfolios": [
         {
-          "group_name": "Hậu trường 1",
+          "group_name": "Ảnh hậu trường",
           "items": [
             {
               "name": "Ảnh 1",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_4.production-1.webp",
+              "link": "https://drive.google.com/drive/folders/116O2yFG4UxhGhKfUyasODhFhzmtv8AzC?usp=drive_link"
             },
             {
               "name": "Ảnh 2",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_4.production-2.webp",
+              "link": "https://drive.google.com/drive/folders/116O2yFG4UxhGhKfUyasODhFhzmtv8AzC?usp=drive_link"
             },
             {
               "name": "Ảnh 3",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "image_url": "/assets/kncm_4.production-4.webp",
+              "link": "https://drive.google.com/drive/folders/116O2yFG4UxhGhKfUyasODhFhzmtv8AzC?usp=drive_link"
             }
           ]
         },
         {
-          "group_name": "Hậu trường 2",
+          "group_name": "Storyboard",
           "items": [
             {
-              "name": "Ảnh 4",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "TVC",
+              "image_url": "/assets/kncm_4.story5.webp",
+              "link": "https://drive.google.com/drive/folders/1-VtJCEH4B5wdvzzNhoakGJd9hop9ksmr?usp=drive_link"
             },
             {
-              "name": "Ảnh 5",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "MV",
+              "image_url": "/assets/kncm_4.story4.webp",
+              "link": "https://drive.google.com/drive/folders/1-VtJCEH4B5wdvzzNhoakGJd9hop9ksmr?usp=drive_link"
             },
             {
-              "name": "Ảnh 6",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Phim ngắn",
+              "image_url": "/assets/kncm_4.story2.webp",
+              "link": "https://drive.google.com/drive/folders/1-VtJCEH4B5wdvzzNhoakGJd9hop9ksmr?usp=drive_link"
             }
           ]
         }
@@ -323,17 +323,17 @@
       ],
       "portfolios": [
         {
-          "group_name": "sheet nội bộ",
+          "group_name": "Workspace vận hành nội bộ",
           "items": [
             {
-              "name": "Sheet 4",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Quản lý nhân sự",
+              "image_url": "/assets/kncm_5.op1.webp",
+              "link": ""
             },
             {
-              "name": "Sheet 5",
-              "image_url": "./assets/source.webp",
-              "link": "https://linktosource"
+              "name": "Khảo sát nhânn sự",
+              "image_url": "/assets/kncm_5.op2.webp",
+              "link": ""
             }
           ]
         }
